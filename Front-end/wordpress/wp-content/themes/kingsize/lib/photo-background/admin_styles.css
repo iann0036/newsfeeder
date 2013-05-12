@@ -1,0 +1,74 @@
+#files_list
+{
+	margin: 10px 0;
+	font-size: 0.8em;
+	font-weight: bold;
+	line-height: 1em;
+	border: 1px #ccc solid;
+	padding: 5px;
+}
+
+#files_list h3
+{
+	margin: 0 0 5px 0;
+	padding: 0 0 2px 0;
+	border-bottom: 2px #e5f3ff solid;
+	font-weight: normal;
+	font-size: 1.2em;
+}
+
+ul.kingsize_nav
+{
+	margin: 15px 0 0 60px;
+	background: red;
+	padding: 0;
+	list-style: none;
+}
+
+.kingsize_nav li
+{
+	margin: 0 0 0 0px;
+	padding: 0;
+	list-style: none;
+	display: inline;
+}
+
+.kingsize_nav li a
+{
+	color: #333;
+	font-size: 0.8em;
+	display: block;
+	float: left;
+	padding: 0 3px;
+	margin: 0 7px 0 0;
+	border: 1px #ccc solid;
+	border-bottom: none;
+	text-decoration: none;
+}
+
+.kingsize_nav li a:hover, .kingsize_nav li a.active { background-color: #dfdfdf; }
+
+.photoitem
+{
+	margin: 7px 0;
+	padding: 5px;
+	border: 1px #ccc solid;
+}
+
+.photoitem img { float: right; }
+.photoitem .clear { clear: both; }
+.photoitem .details { float: left; }
+
+.photoitem .desc
+{
+	float: left;
+	margin-left: 10px;
+}
+
+.photoitem .deletelink
+{
+	text-decoration: none;
+	border: none;
+	color: red;
+	text-weight: bold;
+}

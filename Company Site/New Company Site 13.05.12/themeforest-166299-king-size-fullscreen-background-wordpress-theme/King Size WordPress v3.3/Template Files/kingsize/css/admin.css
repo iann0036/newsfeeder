@@ -1,0 +1,113 @@
+#admin-options {
+	float: left;
+	width: 660px;
+}
+
+
+.upload-help-box
+{ }
+
+
+.image
+{margin: 20px 0 0 0;}
+
+#wm_style_prefs .upload-help-box
+{margin: 0 0 20px 0;
+padding: 10px 0;
+border-bottom: 1px solid #e2e2e2;
+}
+
+textarea
+{width: 430px;}
+
+.option
+{position: relative;
+width: 350px;
+}
+
+.option_section
+{background: #fafafa;
+padding: 20px 20px;
+border: 1px solid #cecece;
+-moz-border-radius: 5px; 
+-webkit-border-radius: 5px; 
+border-radius: 5px; 
+margin: 0 0 20px 0;
+}
+
+.option_section h2
+{background: #e8e8e8;
+padding: 10px 20px;
+margin: 0 0 40px 0;
+border: 1px solid #dedede;
+-moz-border-radius: 5px; 
+-webkit-border-radius: 5px; 
+border-radius: 5px; }
+
+.option_row:after 
+ { content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+
+
+.option_row 
+{position: relative;
+padding: 0 0 20px 0;
+}
+
+.option_row  a
+{position: absolute;
+top: 0px;
+}
+
+.option_row div
+{float: left;}
+
+.option_textarea div
+{float: none;
+margin: 0 0 10px 0;
+}
+
+.option_textarea a 
+{top: 30px;}
+
+.option_row .option-label
+{width: 200px;}
+
+#wm_misc_social .option_row .option-label
+{width: 140px;}
+
+
+.option_row .hasColorPicker
+{width: 80px;}
+
+td .checkbox_option
+{width: 40px;}
+
+.option_help
+{
+	background: white;
+	border: 3px solid #e1e1e1;
+	position: absolute;
+	width: 250px;
+	padding: 10px;
+	font-size: 12px;
+	-moz-border-radius: 5px; 
+  	-webkit-border-radius: 5px; 
+	border-radius: 5px; 
+	-moz-box-shadow: 0px 0px 7px #5e5e5e; 
+  -webkit-box-shadow: 0px 0px 7px #5e5e5e; 
+box-shadow: 0px 0px 7px #5e5e5e; 
+	
+}
+
+.background
+{width: 290px;
+height: 245px;
+background: white url(../lib/assets/background.jpg) no-repeat top left;
+}
+
+.background p
+{padding: 165px 10px 0 10px;}

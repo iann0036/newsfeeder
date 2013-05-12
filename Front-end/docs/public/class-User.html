@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="generator" content="ApiGen 2.4.0">
+
+	<title>Class User</title>
+
+	<script type="text/javascript" src="resources/combined.js?1841058525"></script>
+	<script type="text/javascript" src="elementlist.js?4217586521"></script>
+	<script type="text/javascript">
+		var ApiGen = ApiGen || {};
+		ApiGen.options = {"elementDetailsCollapsed":true,"elementsOrder":"natural"};
+	</script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3295955786">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+		<div id="groups">
+
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-AccountsManager.html">AccountsManager</a></li>
+				<li><a href="class-Article.html">Article</a></li>
+				<li><a href="class-ArticleCollection.html">ArticleCollection</a></li>
+				<li><a href="class-CommentCollection.html">CommentCollection</a></li>
+				<li><a href="class-DatabaseConnection.html">DatabaseConnection</a></li>
+				<li><a href="class-DataCollection.html">DataCollection</a></li>
+				<li><a href="class-FeedCollection.html">FeedCollection</a></li>
+				<li><a href="class-GUIMaker.html">GUIMaker</a></li>
+				<li><a href="class-ImageCollection.html">ImageCollection</a></li>
+				<li><a href="class-ServiceSocket.html">ServiceSocket</a></li>
+				<li><a href="class-SheetCollection.html">SheetCollection</a></li>
+				<li><a href="class-Stats.html">Stats</a></li>
+				<li class="active"><a href="class-User.html">User</a></li>
+				<li><a href="class-UserCollection.html">UserCollection</a></li>
+				<li><a href="class-Weather.html">Weather</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text">
+		<input type="submit" value="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class User</h1>
+
+	<div class="description">
+	
+<p>Identifies a particular user of the service</p>
+
+<pre>
+<span class="php-var">$user</span> = <span
+class="php-keyword1">new</span> User();
+<span
+class="php-var">$otheruser</span> = <span
+class="php-keyword1">new</span> User(<span
+class="php-quote">'jbloggs'</span>,<span
+class="php-quote">'Joe Bloggs'</span>,<span class="php-num">1</span>,<span
+class="php-num">0</span>,<span
+class="php-quote">'joe@example.com'</span>);
+
+<span
+class="php-keyword1">if</span> (<span
+class="php-var">$user</span>-&gt;validUser()) {
+    <span
+class="php-keyword1">echo</span> <span
+class="php-var">$user</span>-&gt;getUsername();
+    <span
+class="php-keyword1">echo</span> <span
+class="php-var">$user</span>-&gt;getName();
+    <span
+class="php-keyword1">echo</span> <span
+class="php-var">$user</span>-&gt;getEmail();
+    <span
+class="php-keyword1">if</span> (<span
+class="php-var">$user</span>-&gt;isAdmin())
+        <span
+class="php-keyword1">echo</span> <span
+class="php-quote">'User is an Administrator'</span>;
+    <span
+class="php-keyword1">if</span> (<span
+class="php-var">$user</span>-&gt;isAltDesign())
+        <span
+class="php-keyword1">echo</span> <span
+class="php-var">$user</span>-&gt;isAltDesign();
+}
+
+<span
+class="php-var">$user</span>-&gt;logout();
+</pre>
+
+	</div>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+
+				<b>Author:</b>
+				Ian Mckay &lt;<a
+href="mailto:im607&#64;uowmail.edu.au">im607&#64;<!---->uowmail.edu.au</a>&gt;<br>
+		<b>Located at</b> <a href="source-class-User.html#17" title="Go to source code">User.php</a><br>
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-User.html#66" title="Go to source code">__construct</a>( <span>null|string <var>$username</var> = <span class="php-keyword1">null</span></span>, <span>null|string <var>$name</var> = <span class="php-keyword1">null</span></span>, <span>null|integer <var>$layout</var> = <span class="php-keyword1">null</span></span>, <span>null|boolean <var>$admin</var> = <span class="php-keyword1">null</span></span>, <span>null|string <var>$email</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Initializes AccountsManager class, creates new database connection, sets user
+data</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Initializes AccountsManager class, creates new database connection, sets user
+data</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$username</var></dt>
+					<dd><code>null|string</code><br> the users username, if set</dd>
+					<dt><var>$name</var></dt>
+					<dd><code>null|string</code><br> the users name, if set</dd>
+					<dt><var>$layout</var></dt>
+					<dd><code>null|integer</code><br> the users layout, if set</dd>
+					<dt><var>$admin</var></dt>
+					<dd><code>null|boolean</code><br> whether the user is an admin, if set</dd>
+					<dt><var>$email</var></dt>
+					<dd><code>null|string</code><br> the users email address, if set</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="validUser" id="_validUser">
+
+		<td class="attributes"><code>
+			
+			 public static
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_validUser">#</a>
+		<code><a href="source-class-User.html#94" title="Go to source code">validUser</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns whether the user is valid</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns whether the user is valid</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>returns true if valid user, else false<br>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getUsername" id="_getUsername">
+
+		<td class="attributes"><code>
+			
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getUsername">#</a>
+		<code><a href="source-class-User.html#102" title="Go to source code">getUsername</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the users username</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the users username</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>returns the username<br>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getName" id="_getName">
+
+		<td class="attributes"><code>
+			
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getName">#</a>
+		<code><a href="source-class-User.html#110" title="Go to source code">getName</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the users name</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the users name</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>returns the name<br>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getEmail" id="_getEmail">
+
+		<td class="attributes"><code>
+			
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getEmail">#</a>
+		<code><a href="source-class-User.html#118" title="Go to source code">getEmail</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the users email</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the users email</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>returns the email<br>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isAdmin" id="_isAdmin">
+
+		<td class="attributes"><code>
+			
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isAdmin">#</a>
+		<code><a href="source-class-User.html#126" title="Go to source code">isAdmin</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns whether the user is an administrator</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns whether the user is an administrator</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>returns true if is administrator, else false<br>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isAltDesign" id="_isAltDesign">
+
+		<td class="attributes"><code>
+			
+			 public 
+			boolean|integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isAltDesign">#</a>
+		<code><a href="source-class-User.html#134" title="Go to source code">isAltDesign</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns what design the user uses</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns what design the user uses</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean|integer</code><br>returns the type of alternative design as an integer, otherwise false<br>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="logout" id="_logout">
+
+		<td class="attributes"><code>
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_logout">#</a>
+		<code><a href="source-class-User.html#145" title="Go to source code">logout</a>( )</code>
+
+		<div class="description short">
+			
+<p>Removes all session data</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Removes all session data</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.4.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

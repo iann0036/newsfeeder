@@ -1,0 +1,61 @@
+/*****************************************************************************
+The following instructions are for compiling and configuring each section of
+News Feeder (PLEASE NOTE: All compilations were performed using our servers 
+library paths and using our servers configuration settions, these will be 
+different for you)
+*****************************************************************************/
+/*****************************************************************************
+FRONT-END
+*****************************************************************************/
+Ensure that php5-memcache and php5-mysqli are installed.
+
+Start the memcache daemon on port 11211. (memcached -d -m 512 -l 127.0.0.1)
+
+To deploy the website and it's files do the following:
+Copy all files to your website root (usually /var/www)
+CHOWN the files such that the web user has access to the files
+CHMOD /templates such that it is writable by the web user
+Change /misc/config.php to your MySQL database settings and hostname
+/*****************************************************************************
+BACK-END
+*****************************************************************************/
+To compile the back-end, you need following libraries installed:
+boost
+curl
+gd
+htmlcxx
+mysql c++ connector
+Note: the mysql c++ connector must be the last library to link
+Modify the library path in the makefile (trunk/Back-end) and run make command
+
+To run the program, you need to specify the LD_LIBRARY_PATH to the directory
+of the libraries
+/*****************************************************************************
+SHARED DATABASE LIBRARY
+*****************************************************************************/
+To compile the database library, you need the following libraries and 
+applications installed:
+g++
+make
+Java
+JDK
+SWIG
+Boost
+MySql C++ Connector (mysqlcppconn)
+
+Remember to update the makefile to the appropriate library paths.
+To compile the initial C++ library use: make
+To compile the Java Library:
+make java
+Perform the changes specified in the makefile
+make java2
+
+To copy the finished libraries use: sudo make install
+
+/*****************************************************************************
+DOWNLOADER APPLICATION
+*****************************************************************************/
+
+/*****************************************************************************
+WEB SERVICE
+*****************************************************************************/

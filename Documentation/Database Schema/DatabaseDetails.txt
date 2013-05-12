@@ -1,0 +1,11 @@
+Host: iann0036.com
+Database: ianncom1_nf
+User: ianncom1_nf
+Pass: newsfeeder1
+Access URL: http://iann0036.com:2082/3rdparty/phpMyAdmin/index.php
+
+
+/* SCRAPED
+Wordpress User: nfadmin
+Wordpress Pass: nfpass1
+*/

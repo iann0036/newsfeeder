@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="generator" content="ApiGen 2.4.0">
+
+	<title>Class Stats</title>
+
+	<script type="text/javascript" src="resources/combined.js?1841058525"></script>
+	<script type="text/javascript" src="elementlist.js?4217586521"></script>
+	<script type="text/javascript">
+		var ApiGen = ApiGen || {};
+		ApiGen.options = {"elementDetailsCollapsed":true,"elementsOrder":"natural"};
+	</script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3295955786">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+		<div id="groups">
+
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-AccountsManager.html">AccountsManager</a></li>
+				<li><a href="class-Article.html">Article</a></li>
+				<li><a href="class-ArticleCollection.html">ArticleCollection</a></li>
+				<li><a href="class-CommentCollection.html">CommentCollection</a></li>
+				<li><a href="class-DatabaseConnection.html">DatabaseConnection</a></li>
+				<li><a href="class-DataCollection.html">DataCollection</a></li>
+				<li><a href="class-FeedCollection.html">FeedCollection</a></li>
+				<li><a href="class-GUIMaker.html">GUIMaker</a></li>
+				<li><a href="class-ImageCollection.html">ImageCollection</a></li>
+				<li><a href="class-ServiceSocket.html">ServiceSocket</a></li>
+				<li><a href="class-SheetCollection.html">SheetCollection</a></li>
+				<li class="active"><a href="class-Stats.html">Stats</a></li>
+				<li><a href="class-User.html">User</a></li>
+				<li><a href="class-UserCollection.html">UserCollection</a></li>
+				<li><a href="class-Weather.html">Weather</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text">
+		<input type="submit" value="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Stats</h1>
+
+	<div class="description">
+	
+<p>Generates front page statistics</p>
+
+<pre>
+<span class="php-var">$stats</span> = <span
+class="php-keyword1">new</span> Stats();
+
+<span
+class="php-keyword1">echo</span> <span
+class="php-var">$stats</span>-&gt;getCommentCount();
+<span
+class="php-keyword1">echo</span> <span
+class="php-var">$stats</span>-&gt;getUserCount();
+<span
+class="php-keyword1">echo</span> <span
+class="php-var">$stats</span>-&gt;getSheetCount();
+<span
+class="php-keyword1">echo</span> <span
+class="php-var">$stats</span>-&gt;getFeedCount();
+<span
+class="php-keyword1">echo</span> <span
+class="php-var">$stats</span>-&gt;getItemCount();
+</pre>
+
+	</div>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+
+				<b>Author:</b>
+				Ian Mckay &lt;<a
+href="mailto:im607&#64;uowmail.edu.au">im607&#64;<!---->uowmail.edu.au</a>&gt;<br>
+		<b>Located at</b> <a href="source-class-Stats.html#15" title="Go to source code">Stats.php</a><br>
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Stats.html#62" title="Go to source code">__construct</a>( )</code>
+
+		<div class="description short">
+			
+<p>Initializes Stats class, creates new database connection</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Initializes Stats class, creates new database connection</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getCommentCount" id="_getCommentCount">
+
+		<td class="attributes"><code>
+			
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getCommentCount">#</a>
+		<code><a href="source-class-Stats.html#82" title="Go to source code">getCommentCount</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the amount of comments in the system</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the amount of comments in the system</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>returns the amount of comments<br>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getUserCount" id="_getUserCount">
+
+		<td class="attributes"><code>
+			
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getUserCount">#</a>
+		<code><a href="source-class-Stats.html#90" title="Go to source code">getUserCount</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the amount of users in the system</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the amount of users in the system</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>returns the amount of users<br>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getSheetCount" id="_getSheetCount">
+
+		<td class="attributes"><code>
+			
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getSheetCount">#</a>
+		<code><a href="source-class-Stats.html#98" title="Go to source code">getSheetCount</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the amount of sheets in the system</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the amount of sheets in the system</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>returns the amount of sheets<br>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getFeedCount" id="_getFeedCount">
+
+		<td class="attributes"><code>
+			
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFeedCount">#</a>
+		<code><a href="source-class-Stats.html#106" title="Go to source code">getFeedCount</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the amount of feeds in the system</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the amount of feeds in the system</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>returns the amount of feeds<br>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getItemCount" id="_getItemCount">
+
+		<td class="attributes"><code>
+			
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getItemCount">#</a>
+		<code><a href="source-class-Stats.html#114" title="Go to source code">getItemCount</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the amount of items in the system</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the amount of items in the system</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>returns the amount of items<br>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.4.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

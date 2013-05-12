@@ -1,0 +1,313 @@
+/**
+@page protocol Protocol talks to Front-end
+@author	Shiwei Zhang <sz653@uow.edu.au>
+@date	01/05/12
+@version	0.2
+@tableofcontents
+
+
+@section protocol_introduction Introduction
+This page contains protocol definition that talks to the front-end of News Feeder.<br>
+For this version of protocol, the protocol is <b>plaintext</b> which is more readable for human beings but less efficient and security. In the next version of this protocol will based on binary which is more efficient but less human readable.<br>
+In later versions, the protocol will be encapsulated by a security layer.
+@warning The protocol details may be changed during development because we are adding news features and implementation issues.
+
+@subsection protocol_introduction_socket Sockets
+The back-end listens to both unix socket and tcp socket as defined by the config file. The user could turn off unix socket listening or tcp socket listening by modifying the config file.<br>
+Basically, for a server that installed both front-end and back-end, unix socket is suggested and turn of the tcp socket in order to prevent external attacks. On the hand, if front-end and back-end are installed in different servers, tcp socket is suggested and turn of the unix socket.
+
+
+@section protocol_login Login
+Before the front-end could communicate with and control back-end, it should login first and be authenticated in order to provide basic security. The front-end must provide a username and password for authentication.
+
+@subsection protocol_login_success Success case
+@msc
+	arcgradient = 8;
+	f[label="Front-end"], b[label="Back-end"];
+	f=>b [label="username(e.g. alex)"];
+	f<=b [label="pass"];
+	f=>b [label="password"];
+	f<=b [label="success"];
+@endmsc
+
+@subsection protocol_login_fail Fail case
+@msc
+	arcgradient = 8;
+	f[label="Front-end"], b[label="Back-end"];
+	f=>b [label="username(e.g. alex)"];
+	f<=b [label="pass"];
+	f=>b [label="password"];
+	f<=b [label="deny"];
+@endmsc
+
+
+@section protocol_status status - Check the status
+The front-end can check the status of the back-end via "status" and combine sub-commands as following:
+	@code
+	status [sub-command]
+	@endcode
+If sub-command is not provide, the back-end will send a brief string to the front-end. This string may not be parsed by the front-end but is human readable.
+@msc
+	arcgradient = 8;
+	f[label="Front-end"], b[label="Back-end"];
+	f=>b [label="status"];
+	f<=b [label="brief string"];
+@endmsc
+In the later version, statistical information will be available.
+
+@subsection protocol_status_crawler crawler - crawler status
+This sub-command "crawler" will tell whether the crawler is running or not.<br>
+If the crawler is currently running, it will return "running":
+@msc
+	arcgradient = 8;
+	f[label="Front-end"], b[label="Back-end"];
+	f=>b [label="status crawler"];
+	f<=b [label="running"];
+@endmsc
+If the crawler is currently stopped, it will return "stopped":
+@msc
+	arcgradient = 8;
+	f[label="Front-end"], b[label="Back-end"];
+	f=>b [label="status crawler"];
+	f<=b [label="stopped"];
+@endmsc
+Note: There are 4 statuses: running, stopped, stopping and starting.
+
+@subsection protocol_status_uptime uptime - Back-end uptime
+This sub-command "uptime" will return back how many seconds that the back-end has run. For example: (has run for 1 hour)
+@msc
+	arcgradient = 8;
+	f[label="Front-end"], b[label="Back-end"];
+	f=>b [label="status uptime"];
+	f<=b [label="3600"];
+@endmsc
+
+
+@section protocol_crawler crawler - Control the crawler
+The crawler command in this version of protocol is under the assumption that the back-end is only running one crawler (since the back-end is designed to handle multiple crawler at one time).<br>
+Same as command @ref protocol_status, this command is used with sub-commands while a sub-command is required. For example:
+@msc
+	arcgradient = 8;
+	f[label="Front-end"], b[label="Back-end"];
+	f=>b [label="crawler start"];
+	f<=b [label="success"];
+@endmsc
+If no sub-command is attached to the command "crawler", the back-end will return a "fail" as following:
+@msc
+	arcgradient = 8;
+	f[label="Front-end"], b[label="Back-end"];
+	f=>b [label="crawler"];
+	f<=b [label="fail"];
+@endmsc
+
+@subsection protocol_crawler_start start - Start the crawler
+This sub-command "start" tells the back-end to start the crawler:
+@msc
+	arcgradient = 8;
+	f[label="Front-end"], b[label="Back-end"];
+	f=>b [label="crawler start"];
+	f<=b [label="success"];
+@endmsc
+If exceptions are thrown and caught by the back-end, it will return a "fail" with error message followed by a ": ":
+@msc
+	arcgradient = 8;
+	f[label="Front-end"], b[label="Back-end"];
+	f=>b [label="crawler start"];
+	f<=b [label="fail: crawler is already running"];
+@endmsc
+
+@subsection protocol_crawler_status status - Check the status of the crawler
+This sub-command "status" is exactly the same as command "status crawler".
+@see @ref protocol_status_crawler
+
+@subsection protocol_crawler_stop stop - Stop the crawler
+This sub-command "stop" tells the back-end to stop the crawler:
+@msc
+	arcgradient = 8;
+	f[label="Front-end"], b[label="Back-end"];
+	f=>b [label="crawler stop"];
+	f<=b [label="success"];
+@endmsc
+If exceptions are thrown and caught by the back-end, it will return a "fail" with error message followed by a ": ":
+@msc
+	arcgradient = 8;
+	f[label="Front-end"], b[label="Back-end"];
+	f=>b [label="crawler stop"];
+	f<=b [label="fail: crawler is already stopped"];
+@endmsc
+
+
+@section protocol_config config - Configure back-end
+The "config" command provide the direct control of the config information at the back-end.
+Like @ref protocol_crawler, a sub-command is required when using this command.
+@msc
+	arcgradient = 8;
+	f[label="Front-end"], b[label="Back-end"];
+	f=>b [label="config"];
+	f<=b [label="fail"];
+@endmsc
+@see config::ConfigManager
+
+@subsection protocol_config_add add - Add/Change an attribute
+This sub-command "add" tells the back-end to add or change an attribute.
+The grammar for this command is:
+@code
+	config add sector attribute value
+@endcode
+The sector and attribute should not contain whitespaces. It will take everything after attribute as the value of that attribute. For example:
+@msc
+	arcgradient = 8;
+	f[label="Front-end"], b[label="Back-end"];
+	f=>b [label="config add mysql password \"hello world\""];
+	f<=b [label="success"];
+@endmsc
+In this example, "mysql" is parsed as sector name, "password" is parsed as attribute name, and "hello world" is parsed as its value.
+This command may fail (because of memory problem or others) and it will return a "fail" with error message followed by a ": ":
+@msc
+	arcgradient = 8;
+	f[label="Front-end"], b[label="Back-end"];
+	f=>b [label="config add mysql password \"hello world\""];
+	f<=b [label="fail: out of memory"];
+@endmsc
+If the required sector or attribute does not exist, it will automatically add a new one. If the attribute is already there, the back-end will change it.
+
+@subsection protocol_config_get get - Return an attribute
+This sub-command "get" tells the back-end to get the value of an attribute. The grammar for this command is:
+@code
+	config get sector attribute
+@endcode
+The back-end will search for this attribute as requested. if request is successful, the back-end will return "success". Otherwise, it will return "fail", followed by an error message. Once success, the front-end can get the value back by sending "transmit".
+@msc
+	arcgradient = 8;
+	f[label="Front-end"], b[label="Back-end"];
+	f=>b [label="config get Crawler thread"];
+	f<=b [label="success"];
+	f=>b [label="transfer"];
+	f<=b [label="5"];
+@endmsc
+Of course, the front-end can cancel this by sending "cancel" or rubbish.
+@msc
+	arcgradient = 8;
+	f[label="Front-end"], b[label="Back-end"];
+	f=>b [label="config get Crawler thread"];
+	f<=b [label="success"];
+	f=>b [label="cancel"];
+	f<=b [label="success"];
+@endmsc
+Also, here is the situation if the sector or the attribute is not available:
+@msc
+	arcgradient = 8;
+	f[label="Front-end"], b[label="Back-end"];
+	f=>b [label="config get Crawler thread"];
+	f<=b [label="fail: Sector \"Crawler\" not found"];
+@endmsc
+
+@subsection protocol_config_load load - Load configuration file
+This sub-command "load" tells the back-end to load all configurations from a config file. The grammar for this command is:
+@code
+	config load [file]
+@endcode
+where "file" is optional. Note: The default config file is "nfrd.conf" which is hard coded in the nfrd program.
+It will return "success" on success or "fail" followed by error message on failure.<br>
+Success case:
+@msc
+	arcgradient = 8;
+	f[label="Front-end"], b[label="Back-end"];
+	f=>b [label="config load"];
+	f<=b [label="success"];
+@endmsc
+Fail case:
+@msc
+	arcgradient = 8;
+	f[label="Front-end"], b[label="Back-end"];
+	f=>b [label="config load"];
+	f<=b [label="fail: Unable to open file \"nfrd.conf\""];
+@endmsc
+@see config::ConfigManager::Read()
+
+@subsection protocol_config_save save - Save configuration file
+This sub-command "save" tells the back-end to save all configurations to a config file. The grammar for this command is:
+@code
+	config save [file]
+@endcode
+where "file" is optional. Note: The default config file is "nfrd.conf" which is hard coded in the nfrd program.
+It will return "success" on success or "fail" followed by error message on failure.<br>
+Success case:
+@msc
+	arcgradient = 8;
+	f[label="Front-end"], b[label="Back-end"];
+	f=>b [label="config save"];
+	f<=b [label="success"];
+@endmsc
+Fail case:
+@msc
+	arcgradient = 8;
+	f[label="Front-end"], b[label="Back-end"];
+	f=>b [label="config save"];
+	f<=b [label="fail: Unable to create file \"nfrd.conf\""];
+@endmsc
+@see config::ConfigManager::Write()
+
+
+@section protocol_shutdown shutdown - Shutdown the Back-End
+Shutdown the Back-End process in a safe way. Stopping all modules and unload them then terminate itself.
+Success case:
+@msc
+	arcgradient = 8;
+	f[label="Front-end"], b[label="Back-end"];
+	f=>b [label="shutdown"];
+	f<=b [label="success"];
+@endmsc
+Fail case:
+@msc
+	arcgradient = 8;
+	f[label="Front-end"], b[label="Back-end"];
+	f=>b [label="shutdown"];
+	f<=b [label="fail: termninate signal already sent"];
+@endmsc
+@warning This command should be used for maintenance only.
+
+
+@section protocol_quit quit - Close connection
+After all communication with the back-end, the front-end should say good-bye, which is "quit" in this case, to the back-end to close the connection between them.
+@msc
+	arcgradient = 8;
+	f[label="Front-end"], b[label="Back-end"];
+	f=>b [label="quit"];
+@endmsc
+
+
+@section protocol_unknown Unknown command handling
+If a command is not supported by the back-end, a message of "unknown command" will be returned.
+@msc
+	arcgradient = 8;
+	f[label="Front-end"], b[label="Back-end"];
+	f=>b [label="hack"];
+	f<=b [label="unknown command"];
+@endmsc
+
+
+@section protocol_example Examples
+Here is some examples for advanced operations.
+
+@subsection protocol_example_crawler_restart Restart the crawler
+@msc
+	arcgradient = 8;
+	f[label="Front-end"], b[label="Back-end"];
+	f=>b [label="crawler stop"];
+	f<=b [label="success"];
+	f=>b [label="crawler start"];
+	f<=b [label="success"];
+@endmsc
+@subsection protocol_example_crawler_change_thread Change the number of thread in crawler
+@msc
+	arcgradient = 8;
+	f[label="Front-end"], b[label="Back-end"];
+	f=>b [label="crawler stop"];
+	f<=b [label="success"];
+	f=>b [label="config add crawler thread 10"];
+	f<=b [label="success"];
+	f=>b [label="crawler start"];
+	f<=b [label="success"];
+@endmsc
+*/

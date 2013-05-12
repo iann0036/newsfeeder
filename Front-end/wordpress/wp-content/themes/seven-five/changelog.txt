@@ -1,0 +1,37 @@
+Version 1.6.1 (10.20.10)
+FIXED: Update Notifications Server Incompatibility (functions.php)
+
+
+Version 1.6 (08.27.10)
+NEW: Added Custom Favicon Options (functions.php, header.php)
+NEW: Custom Menus (WordPress 3.0) Compatibility (functions.php, header.php)
+NEW: Pagination Support (functions.php, index.php)
+NEW: Vimeo Integration (functions.php)
+NEW: YouTube Integration (functions.php)
+REVISED: Updated Background Customization Options (functions.php)
+FIXED: Delicious Bug Fix (functions.php)
+ADDED FILES: widgets/youtube.php, widgets/vimeo.php
+
+
+Version 1.5.3 (07.26.10)
+NEW: Auto-Update Notifications via the WordPress Admin (functions.php, update-notify.php)
+
+
+Version 1.5.2 (07.07.10)
+NEW: New Custom Theme Styles Engine (functions.php, style-custom.php)
+
+
+Version 1.5.1 (07.06.10)
+NEW: Completely Revised Options Page (functions.php, functions.css)
+FIXED: Theme Options Bug for Windows Servers and WordPress 3.0 (functions.php)
+
+
+Version 1.5 (05.18.10)
+NEW: Completely Revised Options Page
+NEW: Added Theme Style Customization Options
+NEW: Home Page Sections are now Widgets
+NEW: Revised Code and CSS
+
+
+Version 1.0 (08.31.09)
+NEW: Initial Release

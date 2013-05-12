@@ -1,0 +1,90 @@
+{include 'header.tpl' pagename='Manage Feeds'}
+{form action='/account/feeds/update.php' method='post' onsubmit='updateFeeds();'}
+{widget title='Manage Feeds' class='iRefresh' nobody=true}
+<div class="rowElem dualBoxes">
+	
+	<script>
+	    function updateFeeds() {
+		var feedList = document.getElementById('feedlist');
+		var optionComponant = document.getElementById('box1View');
+		
+		feedList.value = ':';
+		for (var i=0; i<optionComponant.options.length; i++)
+		    feedList.value += ':' + optionComponant.options[i].value;
+		feedList.value = feedList.value.replace('::','');
+	    }
+	</script>
+	<input type='hidden' id='sheetid' name='sheetid' value='{$sheetid}'/>
+	<input type='hidden' id='feedlist' name='feedlist' value=''/>
+	
+	<div class="floatleft w40">
+	    <h4>Your Feeds</h4>
+	    <br/>Filter: <input type="text" id="box1Filter" class="boxFilter" /><button type="button" id="box1Clear" class="dualBtn">x</button><br />
+	    <select id="box1View" multiple="multiple" class="multiple" style="height:300px;">
+	    {foreach from=$feeds item=feed}
+		{if $feed.enabled}
+		<option value="{$feed.id}">{$feed.name}</option>
+		{/if}
+	    {/foreach}
+	    </select>
+	    <br/>
+	    <span id="box1Counter" class="countLabel"></span>
+
+	    <div class="displayNone"><select id="box1Storage"></select></div>
+	</div>
+
+	<div class="dualControl">
+	    <button id="to2" type="button" class="dualBtn mr5 mb15">&nbsp;&gt;&nbsp;</button>
+	    <button id="allTo2" type="button" class="dualBtn">&nbsp;&gt;&gt;&nbsp;</button><br />
+	    <button id="to1" type="button" class="dualBtn mr5">&nbsp;&lt;&nbsp;</button>
+	    <button id="allTo1" type="button" class="dualBtn">&nbsp;&lt;&lt;&nbsp;</button>
+	</div>
+
+	<div class="floatright w40">
+	    <h4>Available Feeds</h4>
+	    <br/>Filter: <input type="text" id="box2Filter" class="boxFilter" /><button type="button" id="box2Clear" class="dualBtn">x</button><br />
+	    <select id="box2View" multiple="multiple" class="multiple" style="height:300px;">
+	    {foreach from=$feeds item=feed}
+		{if !$feed.enabled}
+		<option value="{$feed.id}">{$feed.name}</option>
+		{/if}
+	    {/foreach}
+	    </select><br/>
+	    <span id="box2Counter" class="countLabel"></span>
+
+
+	    <div class="displayNone"><select id="box2Storage"></select></div>
+	</div>
+    <div class="fix"></div></br><input type="submit" value="Update Feeds" class="greyishBtn submitForm" /><div class="fix"></div>
+</div>
+{/widget}
+{/form}
+{widget nohead=true nobody=true}
+<div class="wizard swMain">
+    <ul>
+	<li><a href="#step-1" class="bordLeft"><h5 class="stepDesc iAdd">Add New Feed. Step 1</h5></a></li>
+	<li><a href="#step-2"><h5 class="stepDesc iMagnify">Step 2</h5></a></li>
+	<li><a href="#step-3"><h5 class="stepDesc iCog4">Step 3</h5></a></li>
+	<li><a href="#step-4" class="bordRight"><h5 class="stepDesc iCheck">Step 4</h5></a></li>
+    </ul>
+
+    <div id="step-1">
+	<div class="rowElem"><label>Add from URL:</label><div class="formRight"><input type="text" placeholder="e.g. http://www.google.com/feeds.rss" name="inputtext"/></div><div class="fix"></div></div>
+	<div class="rowElem"><label>Add from search term:</label><div class="formRight"><input type="text" placeholder="e.g. world news" name="inputtext"/></div><div class="fix"></div></div>
+	<div class="fix"></div>
+    </div>
+    <div id="step-2">
+	Blah
+    </div>                      
+    <div id="step-3">
+	Blah
+    </div>
+
+    <div id="step-4">
+	<p>
+	    Confirmation here
+	</p>                			
+    </div>
+</div>
+{/widget}
+{include 'footer.tpl'}

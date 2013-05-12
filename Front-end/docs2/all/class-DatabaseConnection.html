@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="generator" content="ApiGen 2.4.0">
+
+	<title>Class DatabaseConnection</title>
+
+	<script type="text/javascript" src="resources/combined.js?1841058525"></script>
+	<script type="text/javascript" src="elementlist.js?4217586521"></script>
+	<script type="text/javascript">
+		var ApiGen = ApiGen || {};
+		ApiGen.options = {"elementDetailsCollapsed":true,"elementsOrder":"natural"};
+	</script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3295955786">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+		<div id="groups">
+
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-AccountsManager.html">AccountsManager</a></li>
+				<li><a href="class-Article.html">Article</a></li>
+				<li><a href="class-ArticleCollection.html">ArticleCollection</a></li>
+				<li><a href="class-CommentCollection.html">CommentCollection</a></li>
+				<li class="active"><a href="class-DatabaseConnection.html">DatabaseConnection</a></li>
+				<li><a href="class-DataCollection.html">DataCollection</a></li>
+				<li><a href="class-FeedCollection.html">FeedCollection</a></li>
+				<li><a href="class-GUIMaker.html">GUIMaker</a></li>
+				<li><a href="class-ImageCollection.html">ImageCollection</a></li>
+				<li><a href="class-ServiceSocket.html">ServiceSocket</a></li>
+				<li><a href="class-SheetCollection.html">SheetCollection</a></li>
+				<li><a href="class-Stats.html">Stats</a></li>
+				<li><a href="class-User.html">User</a></li>
+				<li><a href="class-UserCollection.html">UserCollection</a></li>
+				<li><a href="class-Weather.html">Weather</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text">
+		<input type="submit" value="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class DatabaseConnection</h1>
+
+	<div class="description">
+	
+<p>A database controller with methods for each SQL related query</p>
+
+<pre>
+<span class="php-var">$db</span> = <span
+class="php-keyword1">new</span> DatabaseConnection();
+
+<span
+class="php-var">$db</span>-&gt;where(<span class="php-quote">'id'</span>,<span
+class="php-num">1</span>);
+<span class="php-var">$rows</span> = <span
+class="php-var">$db</span>-&gt;get(<span
+class="php-quote">'table'</span>);
+</pre>
+
+<pre>
+<span class="php-var">$db</span> = <span
+class="php-keyword1">new</span> DatabaseConnection();
+
+<span
+class="php-var">$data</span> = <span
+class="php-keyword1">array</span>(
+    <span
+class="php-quote">'field1'</span> =&gt; <span
+class="php-quote">'value1'</span>,
+    <span
+class="php-quote">'field2'</span> =&gt; <span
+class="php-quote">'value2'</span>
+);
+
+<span
+class="php-var">$db</span>-&gt;insert(<span
+class="php-quote">'table'</span>,<span class="php-var">$data</span>);
+</pre>
+
+	</div>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+
+				<b>Author:</b>
+				Ian Mckay &lt;<a
+href="mailto:im607&#64;uowmail.edu.au">im607&#64;<!---->uowmail.edu.au</a>&gt;<br>
+		<b>Located at</b> <a href="source-class-DatabaseConnection.html#13" title="Go to source code">DatabaseConnection.php</a><br>
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-DatabaseConnection.html#56" title="Go to source code">__construct</a>( )</code>
+
+		<div class="description short">
+			
+<p>Initializes DatabaseConnection class, connects to the database</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Initializes DatabaseConnection class, connects to the database</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getConnector" id="_getConnector">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="class-DatabaseConnection.html#$mysqli">DatabaseConnection::<var>$mysqli</var></a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getConnector">#</a>
+		<code><a href="source-class-DatabaseConnection.html#66" title="Go to source code">getConnector</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the Database Connection (LEGACY METHOD, remove when no longer
+needed)</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the Database Connection (LEGACY METHOD, remove when no longer
+needed)</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-DatabaseConnection.html#$mysqli">DatabaseConnection::<var>$mysqli</var></a></code></code><br>returns the database connection<br>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="buildQuery" id="_buildQuery">
+
+		<td class="attributes"><code>
+			
+			 private 
+			stmt
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_buildQuery">#</a>
+		<code><a href="source-class-DatabaseConnection.html#74" title="Go to source code">buildQuery</a>( <span>integer <var>$numRows</var> = <span class="php-keyword1">NULL</span></span>, <span>mixed <var>$tableData</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Builds the end of the SQL query with the data entered</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Builds the end of the SQL query with the data entered</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$numRows</var></dt>
+					<dd><code>integer</code><br> optional maximum number of returned rows</dd>
+					<dt><var>$tableData</var></dt>
+					<dd><code>mixed</code><br> optional data to be accessed, created or modified</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>stmt</code><br>returns the mysqli statement<br>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="prepareQuery" id="_prepareQuery">
+
+		<td class="attributes"><code>
+			
+			 private 
+			stmt
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_prepareQuery">#</a>
+		<code><a href="source-class-DatabaseConnection.html#176" title="Go to source code">prepareQuery</a>( )</code>
+
+		<div class="description short">
+			
+<p>Asks the database to compile the query</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Asks the database to compile the query</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>stmt</code><br>returns the mysqli statement<br>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="dynamicBind" id="_dynamicBind">
+
+		<td class="attributes"><code>
+			
+			 private 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_dynamicBind">#</a>
+		<code><a href="source-class-DatabaseConnection.html#187" title="Go to source code">dynamicBind</a>( <span>stmt <var>$stmt</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Method to bind data with their appropriate data types</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Method to bind data with their appropriate data types</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$stmt</var></dt>
+					<dd><code>stmt</code><br> the built mysqli statement</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>returns the key for the results of the query<br>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getType" id="_getType">
+
+		<td class="attributes"><code>
+			
+			 private 
+			string|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getType">#</a>
+		<code><a href="source-class-DatabaseConnection.html#214" title="Go to source code">getType</a>( <span>type <var>$item</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Automatically determine an objects type</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Automatically determine an objects type</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$item</var></dt>
+					<dd><code>type</code><br> the object</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string|null</code><br>returns the type charater if found, else null<br>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="params" id="_params">
+
+		<td class="attributes"><code>
+			
+			 private 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_params">#</a>
+		<code><a href="source-class-DatabaseConnection.html#239" title="Go to source code">params</a>( <span>mixed <var>$params</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Builds parameter list</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Builds parameter list</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$params</var></dt>
+					<dd><code>mixed</code><br> the parameters</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>returns the parameter list<br>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="doQuery" id="_doQuery">
+
+		<td class="attributes"><code>
+			
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_doQuery">#</a>
+		<code><a href="source-class-DatabaseConnection.html#254" title="Go to source code">doQuery</a>( <span>string <var>$query</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Perform the query and return the results</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Perform the query and return the results</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$query</var></dt>
+					<dd><code>string</code><br> the SQL query</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>returns the results of the query<br>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get" id="_get">
+
+		<td class="attributes"><code>
+			
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get">#</a>
+		<code><a href="source-class-DatabaseConnection.html#269" title="Go to source code">get</a>( <span>string <var>$table</var></span>, <span>integer <var>$maxRows</var> = <span class="php-keyword1">NULL</span></span>, <span>mixed <var>$params</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Make a SELECT database query</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Make a SELECT database query</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code><br> the table to select the data from</dd>
+					<dt><var>$maxRows</var></dt>
+					<dd><code>integer</code><br> optional maximum number of rows to return</dd>
+					<dt><var>$params</var></dt>
+					<dd><code>mixed</code><br> parameters to select</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>returns the results of the query<br>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="insert" id="_insert">
+
+		<td class="attributes"><code>
+			
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_insert">#</a>
+		<code><a href="source-class-DatabaseConnection.html#288" title="Go to source code">insert</a>( <span>string <var>$table</var></span>, <span>mixed <var>$data</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Insert rows into the database</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Insert rows into the database</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code><br> the table to insert data into</dd>
+					<dt><var>$data</var></dt>
+					<dd><code>mixed</code><br> the data to insert</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>returns true if rows were inserted, else false<br>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="update" id="_update">
+
+		<td class="attributes"><code>
+			
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_update">#</a>
+		<code><a href="source-class-DatabaseConnection.html#304" title="Go to source code">update</a>( <span>string <var>$table</var></span>, <span>mixed <var>$data</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Make an UPDATE database query</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Make an UPDATE database query</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code><br> the table to update data</dd>
+					<dt><var>$data</var></dt>
+					<dd><code>mixed</code><br> the new data</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>returns true if rows were updated, else false<br>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="delete" id="_delete">
+
+		<td class="attributes"><code>
+			
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_delete">#</a>
+		<code><a href="source-class-DatabaseConnection.html#321" title="Go to source code">delete</a>( <span>string <var>$table</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Delete rows from the database</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Delete rows from the database</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code><br> the name of the table to delete data from</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>returns true if rows were deleted, else false<br>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="where" id="_where">
+
+		<td class="attributes"><code>
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_where">#</a>
+		<code><a href="source-class-DatabaseConnection.html#337" title="Go to source code">where</a>( <span>string <var>$key</var></span>, <span>string <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Adds a WHERE condition to a database query</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Adds a WHERE condition to a database query</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd><code>string</code><br> the key of the where condition</dd>
+					<dt><var>$value</var></dt>
+					<dd><code>string</code><br> the asserting value of the where condition</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="join" id="_join">
+
+		<td class="attributes"><code>
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_join">#</a>
+		<code><a href="source-class-DatabaseConnection.html#346" title="Go to source code">join</a>( <span>string <var>$table</var></span>, <span>string <var>$left</var></span>, <span>string <var>$right</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Adds a JOIN to a database query</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Adds a JOIN to a database query</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code><br> the secondary table to join</dd>
+					<dt><var>$left</var></dt>
+					<dd><code>string</code><br> the field of the primary table to join on</dd>
+					<dt><var>$right</var></dt>
+					<dd><code>string</code><br> the fieeld of the secondary table to join on</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__destruct" id="___destruct">
+
+		<td class="attributes"><code>
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___destruct">#</a>
+		<code><a href="source-class-DatabaseConnection.html#356" title="Go to source code">__destruct</a>( )</code>
+
+		<div class="description short">
+			
+<p>Closes the database connection</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Closes the database connection</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="mysqli" id="$mysqli">
+
+		<td class="attributes"><code>
+			
+			private 
+			<code><a href="class-DatabaseConnection.html#$mysqli">DatabaseConnection::<var>$mysqli</var></a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DatabaseConnection.html#37" title="Go to source code"><var>$mysqli</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">null</span></code></td>
+		<td class="description"><div>
+			<a href="#$mysqli" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Connection to the database</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Connection to the database</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="query" id="$query">
+
+		<td class="attributes"><code>
+			
+			private 
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DatabaseConnection.html#42" title="Go to source code"><var>$query</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$query" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Currently stored SQL string</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Currently stored SQL string</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="where" id="$where">
+
+		<td class="attributes"><code>
+			
+			private 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DatabaseConnection.html#47" title="Go to source code"><var>$where</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$where" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Array of parameters to match in the WHERE part of the SQL of the format
+$where[key] =&gt; value</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Array of parameters to match in the WHERE part of the SQL of the format
+$where[key] =&gt; value</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="join" id="$join">
+
+		<td class="attributes"><code>
+			
+			private 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DatabaseConnection.html#51" title="Go to source code"><var>$join</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$join" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Array of tables to join in the SQL of the format $where[table] =&gt;
+'leftattribute=rightattribute'</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Array of tables to join in the SQL of the format $where[table] =&gt;
+'leftattribute=rightattribute'</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.4.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

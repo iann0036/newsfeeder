@@ -1,0 +1,110 @@
+/**
+@page config Details in configuration file
+@author	Shiwei Zhang <sz653@uow.edu.au>
+@date	23/04/12
+@version	0.1
+@tableofcontents
+
+
+@section config_introduction Introduction
+This page contains the format of the configuration file and explains every attributes in the config.<br>
+The nfrd program will use "nfrd.cfg" as configuration file by default.<br>
+To use the specified config file for nfrd, please refer to @ref usage_manual.<br>
+Note: Comments in the configuration file are not allowed.
+@see nfrd::config::ConfigManager
+
+
+@section config_format Format
+The config file currently has two levels. One is called <b>Sector</b> and another is called <b>Attribute</b>.<br>
+A config file may have many sectors and a sector may have many attributes. For example:<br>
+<pre>[example]
+name		= example
+description	= just a simple one
+whitespace	= " bla bla bla "
+quote		= "what do you mean by "quote""</pre><br>
+As shown above, there is one sector called "example" and this sector has 4 attributes: <b>name</b>, <b>description</b>, <b>whitespace</b> and <b>quote</b>.<br>
+For parsing the sector name, every thing in <b>[]</b> is considered as the name of the sector.<br>
+For parsing the attribute, its name and its value are separated by a <b>=</b>.
+Although ConfigManager supports white-spaces in attribute, it is not recommended  to do so. The leading and trailing white-spaces of the attribute name is trimmed. For the value of attribute, same rule is applied. However, it can handle white-spaces. Two quotes <b>""</b> are used to indicate the value of the attribute if there are leading or trailing white-spaces. With quotes, the value of <b>whitespace</b> is <i>( bla bla bla )</i>. Without quotes, it will be parsed as <i>(bla bla bla)</i>. The quotes in the quotes is considered as a part of the value. For example, the value of <b>quote</b> is <i>what do you mean by "quote"</i><br>
+Note: All values are considered as strings.
+
+
+@section config_master master - General configuration
+<pre>[master]
+log	= nfrd.log</pre>
+
+@subsection config_master_log log - Log file
+This attribute specifies where nfrd writes logs to.<br>
+The path can be an abstract path or a relative path. For relative path, it is not related to where the nfrd program is, but the path the nfrd program is working.
+To disable logging, just delete this attribute or leave it blank.
+
+
+@section config_module module - Module loading list
+<pre>[module]
+AdminService	= 1
+Crawler		= 0</pre>
+To enable a module, set the module name with a positive number (normally "1").<br>
+To disable a module, delete the attribute for the module or set a zero to it.
+
+
+@section config_AdminService AdminService - Module configuration
+<pre>[AdminService]
+port		= 6373
+username	= username
+password	= password
+timeout		= 60</pre>
+
+@subsection config_AdminService_port port - TCP Listening port number
+This attribute specifies which port the AdminService Module of nfrd listens.
+
+@subsection config_AdminService_username username - Username for authentication
+This attribute provides the username for authentication
+
+@subsection config_AdminService_password password - Password for authentication
+This attribute provides the password for authentication
+
+@subsection config_AdminService_timeout timeout - Timeout on socket communicating
+This optional attribute specifies the time limit that AdminService Module of nfrd on a single operation, especially in socket reading and writing. By default, it is specified as 60 seconds.
+
+
+@section config_Crawler Crawler - Module configuration
+<pre>[Crawler]
+thread	= 5
+sleep	= 1</pre>
+
+@subsection config_Crawler_thread thread - Number of crawling thread
+This attribute specifies the number of thread Crawler Module of nfrd used to crawl feeds.
+
+@subsection config_Crawler_sleep sleep - Time to sleep for each round
+This attribute specifies the time to sleep for each round threads crawl the database feed table.
+
+@section config_Statistics Statistics - Module configuration
+<pre>[Statistics]
+period		= 3600</pre>
+
+@subsection config_Statistics_period period - Time to update or record
+This attribute specifies the period of updating or recording (in seconds). For example, by setting period to 3600, the statistics will be updated for each hour.
+
+@section config_mysql mysql - Database connector configuration
+<pre>[mysql]
+host		= 127.0.0.1
+port		= 3306
+database	= newsfeeder
+username	= username
+password	= password</pre>
+
+@subsection config_mysql_host host - Address of the host
+This attribute specifies the address of the host. This value can be either host name or IP address.
+
+@subsection config_mysql_port port - Mysql port of the host
+This optional attribute specifies the mysql port of the host. Default value is 3306.
+
+@subsection config_mysql_ database database - Database schema
+This optional attribute specifies which database schema to use
+
+@subsection config_mysql_username username - Username for authentication
+This attribute provides the username for authentication
+
+@subsection config_mysql_password password - Password for authentication
+This attribute provides the password for authentication
+*/

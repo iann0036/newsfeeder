@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>http://newsfeeder.co/</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://newsfeeder.co/members/login/</loc>
+  <changefreq>never</changefreq>
+</url>
+<url>
+  <loc>http://newsfeeder.co/index.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://newsfeeder.co/faq/</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://newsfeeder.co/contact/</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://newsfeeder.co/members/register/</loc>
+  <changefreq>never</changefreq>
+</url>
+</urlset>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="generator" content="ApiGen 2.4.0">
+
+	<title>Class AccountsManager | News Feeder</title>
+
+	<script type="text/javascript" src="resources/combined.js?1841058525"></script>
+	<script type="text/javascript" src="elementlist.js?4217586521"></script>
+	<script type="text/javascript">
+		var ApiGen = ApiGen || {};
+		ApiGen.options = {"elementDetailsCollapsed":true,"elementsOrder":"natural"};
+	</script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3295955786">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+		<div id="groups">
+
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-AccountsManager.html">AccountsManager</a></li>
+				<li><a href="class-Article.html">Article</a></li>
+				<li><a href="class-ArticleCollection.html">ArticleCollection</a></li>
+				<li><a href="class-CommentCollection.html">CommentCollection</a></li>
+				<li><a href="class-DatabaseConnection.html">DatabaseConnection</a></li>
+				<li><a href="class-DataCollection.html">DataCollection</a></li>
+				<li><a href="class-FeedCollection.html">FeedCollection</a></li>
+				<li><a href="class-GUIMaker.html">GUIMaker</a></li>
+				<li><a href="class-ImageCollection.html">ImageCollection</a></li>
+				<li><a href="class-ServiceSocket.html">ServiceSocket</a></li>
+				<li><a href="class-SheetCollection.html">SheetCollection</a></li>
+				<li><a href="class-Stats.html">Stats</a></li>
+				<li><a href="class-User.html">User</a></li>
+				<li><a href="class-UserCollection.html">UserCollection</a></li>
+				<li><a href="class-Weather.html">Weather</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text">
+		<input type="submit" value="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class AccountsManager</h1>
+
+	<div class="description">
+	
+<p>Provides methods for the creation and authentication of user accounts</p>
+
+<pre>
+<span class="php-keyword1">require_once</span> <span
+class="php-quote">'AccountsManager.php'</span>;
+
+<span
+class="php-var">$accounts</span> = <span
+class="php-keyword1">new</span> AccountsManager();
+
+<span
+class="php-var">$accounts</span>-&gt;register(<span
+class="php-quote">'Joe Bloggs'</span>,<span
+class="php-quote">'jbloggs'</span>,<span
+class="php-quote">'mypa$$w0rd'</span>,<span
+class="php-quote">'joe@example.com'</span>,<span
+class="php-quote">'http://example.com/image.jpg'</span>);
+<span
+class="php-var">$result</span> = <span
+class="php-var">$accounts</span>-&gt;login(<span
+class="php-quote">'jbloggs'</span>,<span
+class="php-quote">'mypa$$w0rd'</span>,<span
+class="php-keyword1">true</span>);
+</pre>
+
+	</div>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+
+				<b>Author:</b>
+				Ian Mckay &lt;<a
+href="mailto:im607&#64;uowmail.edu.au">im607&#64;<!---->uowmail.edu.au</a>&gt;<br>
+		<b>Located at</b> <a href="source-class-AccountsManager.html#17" title="Go to source code">AccountsManager.php</a><br>
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-AccountsManager.html#38" title="Go to source code">__construct</a>( )</code>
+
+		<div class="description short">
+			
+<p>Initializes AccountsManager class, creates new database connection</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Initializes AccountsManager class, creates new database connection</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="login" id="_login">
+
+		<td class="attributes"><code>
+			
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_login">#</a>
+		<code><a href="source-class-AccountsManager.html#45" title="Go to source code">login</a>( <span>string <var>$username</var></span>, <span>string <var>$password</var></span>, <span>string <var>$remember</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Logs a user into the service</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Logs a user into the service</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$username</var></dt>
+					<dd><code>string</code><br> username of the user</dd>
+					<dt><var>$password</var></dt>
+					<dd><code>string</code><br> password of the user</dd>
+					<dt><var>$remember</var></dt>
+					<dd><code>string</code><br> if not null, sets cookies for the user</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>returns 0 if successful, else 1 if unsuccessful<br>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="register" id="_register">
+
+		<td class="attributes"><code>
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_register">#</a>
+		<code><a href="source-class-AccountsManager.html#69" title="Go to source code">register</a>( <span>string <var>$fname</var></span>, <span>string <var>$username</var></span>, <span>string <var>$password</var></span>, <span>string <var>$email</var></span>, <span>string <var>$photo</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Registers a user with the service</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Registers a user with the service</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$fname</var></dt>
+					<dd><code>string</code><br> the users actual name</dd>
+					<dt><var>$username</var></dt>
+					<dd><code>string</code><br> the users username</dd>
+					<dt><var>$password</var></dt>
+					<dd><code>string</code><br> the users password</dd>
+					<dt><var>$email</var></dt>
+					<dd><code>string</code><br> the users email address</dd>
+					<dt><var>$photo</var></dt>
+					<dd><code>string</code><br> the location of the image file of the users requested avatar</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		News Feeder API documentation generated by <a href="http://apigen.org">ApiGen 2.4.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

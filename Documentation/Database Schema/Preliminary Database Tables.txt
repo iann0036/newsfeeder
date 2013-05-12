@@ -1,0 +1,59 @@
+DATABASE TABLE DRAFT
+
+user 1--* sheet 1--* feed 1--* article
+where:
+
+
+USER
+----
+username		varchar		PK
+password		text		NOT NULL
+avatar			mediumblob
+dateRegistered	timestamp	NOT NULL
+name			text		NOT NULL
+email			text		NOT NULL	UNIQUE
+(settings for page layouts)
+	layout		integer
+	...
+	...
+verified		text		(will be an idenfifier as to whether the user has email verified, null or 1 for verified, random string representing validation ticket string for not verified)
+
+
+SHEET
+-----
+sheetID			integer		PK
+title			text
+user			varchar		FK referencing USER.username
+alternatively could be
+-----
+title			text		PK
+user			varchar		PK, FK
+
+(settings for feed displaying)
+	...
+(optional) lastUpdated	date	NOT NULL
+
+
+The lastUpdated field can be in both SHEET and FEED, will have advantages and disadvantages:
+- if in SHEET as well will make processing quicker (removing a select from PHP) but will duplicate the data
+- if only in FEED will save data, but will need the extra select
+I'd say it would be preferrable to add to the SHEET, since this means it can be automatically updated whenever a feed is read, instead of needing to select on runtime
+
+
+FEED
+----
+feedID			integer		PK
+sheetID			integer		FK
+title			varchar		NOT NULL
+url				text		NOT NULL	UNIQUE
+priority/craw-wait (this will be an identifier for when the feed should be crawled again)
+lastUpdated		date		NOT NULL
+
+
+ARTICLE
+-------
+articleID		integer		PK
+feedID			integer		FK
+title			text		NOT NULL
+body			text		NOT NULL
+dateAdded		timestamp (if going off when crawled) OR date (if going off the data in RSS)

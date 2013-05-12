@@ -1,0 +1,29 @@
+/**
+ * @author	Shiwei Zhang <sz653@uow.edu.au>
+ * @date	21/03/12
+*/
+
+/**
+
+@namespace nfrd
+Contains all classes unique to News Feeder Refresh Daemon
+
+@namespace nfrd::config
+Contains classes related to configuration.
+
+@namespace nfrd::module
+Contains classes that control different modules.
+
+@namespace nfrd::log
+Contains classes related to log.
+
+@namespace nfrd::misc
+Contains classes that commonly used in other classes.
+
+@namespace nfrd::parser
+Contains classes related to all kinds of feed parsers.
+
+@namespace nfrd::misc::Utility
+Contains all utility functions.
+
+*/

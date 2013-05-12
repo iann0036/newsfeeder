@@ -1,0 +1,50 @@
+{include 'header.tpl' pagename='Manage Feeds'}
+{form action='/account/feeds/update.php' method='post'}
+{widget title='Manage Feeds' class='iRefresh' nobody=true}
+	<input type='hidden' id='sheetid' name='sheetid' value='{$sheetid}'/>
+	<h4>Your Feeds</h4>
+	<div class="rowElem">
+	<label>Multiple with search:</label>
+	<div class="formRight">
+	    <select data-placeholder="Your Favorite Football Team" style="" class="chzn-select" multiple="multiple" tabindex="6">
+		<option value=""></option>
+		<optgroup label="Computing">
+		    <option selected="selected">Slashdot</option>
+		    <option>Lifehacker</option>
+		</optgroup>
+	    </select>  
+	</div>             
+	<div class="fix"></div>
+    </div>
+    <div class="fix"></div></br><input type="submit" value="Update Feeds" class="greyishBtn submitForm" /><div class="fix"></div>
+{/widget}
+{/form}
+{widget nohead=true nobody=true}
+<div class="wizard swMain">
+    <ul>
+	<li><a href="#step-1" class="bordLeft"><h5 class="stepDesc iAdd">Add New Feed. Step 1</h5></a></li>
+	<li><a href="#step-2"><h5 class="stepDesc iMagnify">Step 2</h5></a></li>
+	<li><a href="#step-3"><h5 class="stepDesc iCog4">Step 3</h5></a></li>
+	<li><a href="#step-4" class="bordRight"><h5 class="stepDesc iCheck">Step 4</h5></a></li>
+    </ul>
+
+    <div id="step-1">
+	<div class="rowElem"><label>Add from URL:</label><div class="formRight"><input type="text" placeholder="e.g. http://www.google.com/feeds.rss" name="inputtext"/></div><div class="fix"></div></div>
+	<div class="rowElem"><label>Add from search term:</label><div class="formRight"><input type="text" placeholder="e.g. world news" name="inputtext"/></div><div class="fix"></div></div>
+	<div class="fix"></div>
+    </div>
+    <div id="step-2">
+	Blah
+    </div>                      
+    <div id="step-3">
+	Blah
+    </div>
+
+    <div id="step-4">
+	<p>
+	    Confirmation here
+	</p>                			
+    </div>
+</div>
+{/widget}
+{include 'footer.tpl'}

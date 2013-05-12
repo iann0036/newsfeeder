@@ -1,0 +1,1 @@
+To add your language characters, copy files from your language's folder to theme's /js/ folder and replace original files there. 

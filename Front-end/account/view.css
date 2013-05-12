@@ -1,0 +1,19 @@
+#css-table { 
+		display: table; 
+}
+#css-table .col { 
+		display: table-cell; 
+		width: 25%; 
+		padding: 10px; 
+}
+h5.boundedbutton a {
+	border: 1px solid #D0D0D0;
+	font-size: 1.2em;
+	padding: 0.4em;
+	text-decoration: none;
+	color: #0078CC;
+}
+#css-table a {
+	text-decoration: none;
+	color: #326CA6;
+}

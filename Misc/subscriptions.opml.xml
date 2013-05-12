@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+    <head>
+        <title>zorro2b subscriptions in Google Reader</title>
+    </head>
+    <body>
+        <outline text="(title unknown)" title="(title unknown)"
+            type="rss"
+            xmlUrl="http://twitter.com/statuses/friends_timeline/37046554.rss" htmlUrl="http://www.google.com/reader/view/feed%2Fhttp%3A%2F%2Ftwitter.com%2Fstatuses%2Ffriends_timeline%2F37046554.rss"/>
+        <outline text="AppleInsider" title="AppleInsider" type="rss"
+            xmlUrl="http://www.appleinsider.com/appleinsider.rss" htmlUrl="http://www.appleinsider.com/"/>
+        <outline text="AppleSource" title="AppleSource" type="rss"
+            xmlUrl="http://www.applesource.com.au/feed/rss/" htmlUrl="http://www.applesource.com.au"/>
+        <outline text="Bleezer" title="Bleezer" type="rss"
+            xmlUrl="http://larryborsato.com/bleezer/atom.xml" htmlUrl="http://larryborsato.com/bleezer/"/>
+        <outline text="Blog @ Tim Isted" title="Blog @ Tim Isted"
+            type="rss" xmlUrl="http://www.timisted.net/blog/feed/" htmlUrl="http://www.timisted.net/blog"/>
+        <outline text="blog.iphone-dev.org" title="blog.iphone-dev.org"
+            type="rss" xmlUrl="http://blog.iphone-dev.org/rss" htmlUrl="http://blog.iphone-dev.org/"/>
+        <outline text="Cocoa with Love" title="Cocoa with Love"
+            type="rss"
+            xmlUrl="http://feeds.feedburner.com/CocoaWithLove" htmlUrl="http://cocoawithlove.com/"/>
+        <outline text="cocoaheads's Videos" title="cocoaheads's Videos"
+            type="rss"
+            xmlUrl="http://www.viddler.com/explore/cocoaheads/videos/feed/" htmlUrl="http://www.viddler.com/explore/cocoaheads/videos/"/>
+        <outline text="drupal.org - Drupal newsletter"
+            title="drupal.org - Drupal newsletter" type="rss"
+            xmlUrl="http://drupal.org/newsletter/rss.xml" htmlUrl="http://drupal.org/taxonomy/term/42/0"/>
+        <outline text="Engadget" title="Engadget" type="rss"
+            xmlUrl="http://www.engadget.com/rss.xml" htmlUrl="http://www.engadget.com"/>
+        <outline text="Feedburner: O'Reilly Media, Inc. New Books"
+            title="Feedburner: O'Reilly Media, Inc. New Books"
+            type="rss"
+            xmlUrl="http://feeds.feedburner.com/oreilly/newbooks" htmlUrl="http://oreilly.com/"/>
+        <outline text="from News.Mamboserver.com"
+            title="from News.Mamboserver.com" type="rss"
+            xmlUrl="http://news.mamboserver.com/index2.php?option=com_rss&amp;feed=RSS2.0&amp;no_html=1" htmlUrl="http://news.mamboserver.com"/>
+        <outline text="Google Apps Developer Blog"
+            title="Google Apps Developer Blog" type="rss"
+            xmlUrl="http://googleappsdeveloper.blogspot.com/atom.xml" htmlUrl="http://googleappsdeveloper.blogspot.com/"/>
+        <outline text="Google Code Blog" title="Google Code Blog"
+            type="rss"
+            xmlUrl="http://google-code-updates.blogspot.com/atom.xml" htmlUrl="http://googlecode.blogspot.com/"/>
+        <outline text="Google Mac Blog" title="Google Mac Blog"
+            type="rss"
+            xmlUrl="http://feeds.feedburner.com/OfficialGoogleMacBlog" htmlUrl="http://googlemac.blogspot.com/"/>
+        <outline text="Google Mobile Blog" title="Google Mobile Blog"
+            type="rss"
+            xmlUrl="http://feeds2.feedburner.com/OfficialGoogleMobileBlog" htmlUrl="http://googlemobile.blogspot.com/"/>
+        <outline text="Google Web Toolkit Blog"
+            title="Google Web Toolkit Blog" type="rss"
+            xmlUrl="http://googlewebtoolkit.blogspot.com/atom.xml" htmlUrl="http://googlewebtoolkit.blogspot.com/"/>
+        <outline text="Googling Google" title="Googling Google"
+            type="rss"
+            xmlUrl="http://blogs.zdnet.com/Google/wp-rss2.php" htmlUrl="http://www.zdnet.com/blog/google/rss"/>
+        <outline text="Hacker News" title="Hacker News" type="rss"
+            xmlUrl="http://news.ycombinator.com/rss" htmlUrl="http://news.ycombinator.com/"/>
+        <outline text="HandBrake" title="HandBrake" type="rss"
+            xmlUrl="http://handbrake.fr/rss.php" htmlUrl="http://handbrake.fr"/>
+        <outline text="HTML5Rocks - Tutorials"
+            title="HTML5Rocks - Tutorials" type="rss"
+            xmlUrl="http://www.html5rocks.com/tutorials/index.xml" htmlUrl="http://www.html5rocks.com"/>
+        <outline
+            text="InformIT :: MAC OS X/OtherArticles > MAC OS X/Other"
+            title="InformIT :: MAC OS X/OtherArticles > MAC OS X/Other"
+            type="rss"
+            xmlUrl="http://www.informit.com/articles/index_rss.aspx?n=ed645d55-ffdb-41c7-b669-f39c17a784dd" htmlUrl="http://www.informit.com/articles/index_rss.aspx?n=ed645d55-ffdb-41c7-b669-f39c17a784dd"/>
+        <outline text="Inside iPhone" title="Inside iPhone" type="rss"
+            xmlUrl="http://feeds.feedburner.com/oreilly/digitalmedia/iphone" htmlUrl="http://oreilly.com/iphone/"/>
+        <outline text="iPhone Developer News"
+            title="iPhone Developer News" type="rss"
+            xmlUrl="http://developer.apple.com/rss/iphonedevnews.rss" htmlUrl="http://developer.apple.com/news/"/>
+        <outline text="Java.Net Blog" title="Java.Net Blog" type="rss"
+            xmlUrl="http://weblogs.java.net/blog/editors/index.rdf" htmlUrl="http://www.java.net/blogs/editor"/>
+        <outline
+            text="Javalobby - The heart of the Java developer community"
+            title="Javalobby - The heart of the Java developer community"
+            type="rss" xmlUrl="http://www.javalobby.org/forumRSS/61.xml" htmlUrl="http://java.dzone.com/"/>
+        <outline text="Jboss support cases" title="Jboss support cases"
+            type="rss"
+            xmlUrl="https://network.jboss.com/jbossnetwork/restricted/feed/casedetail.html?caseId=50030000003PLKvAAO" htmlUrl="http://www.google.com/reader/view/feed%2Fhttps%3A%2F%2Fnetwork.jboss.com%2Fjbossnetwork%2Frestricted%2Ffeed%2Fcasedetail.html%3FcaseId%3D50030000003PLKvAAO"/>
+        <outline text="jTribe" title="jTribe" type="rss"
+            xmlUrl="http://jtribe.blogspot.com/feeds/posts/default" htmlUrl="http://jtribe.blogspot.com/"/>
+        <outline text="Lifehacker Australia"
+            title="Lifehacker Australia" type="rss"
+            xmlUrl="http://feeds.lifehacker.com.au/LifehackerAustralia" htmlUrl="http://feeds.lifehacker.com.au/LifehackerAustralia"/>
+        <outline text="Lifehacker: Geek to Live"
+            title="Lifehacker: Geek to Live" type="rss"
+            xmlUrl="http://lifehacker.com/software/geek-to-live/index.xml" htmlUrl="http://lifehacker.com/tag/software/geek to live"/>
+        <outline text="Lifehacker: Mac OS X"
+            title="Lifehacker: Mac OS X" type="rss"
+            xmlUrl="http://tags.lifehacker.com/software/mac-os-x/index.xml" htmlUrl="http://lifehacker.com/tag/software/mac os x"/>
+        <outline text="Mac Features" title="Mac Features" type="rss"
+            xmlUrl="http://today.java.net/rss/64.rss" htmlUrl="http://community.java.net/mac"/>
+        <outline text="MacIndie" title="MacIndie" type="rss"
+            xmlUrl="http://macindie.com/feed/" htmlUrl="http://macindie.com"/>
+        <outline text="MacTalk News" title="MacTalk News" type="rss"
+            xmlUrl="http://feeds2.feedburner.com/mactalknews" htmlUrl="http://www.mactalk.com.au"/>
+        <outline text="microISV" title="microISV" type="rss"
+            xmlUrl="http://feeds.feedburner.com/microisv/aNIw" htmlUrl="http://www.microisv.com"/>
+        <outline text="Mobile Orchard" title="Mobile Orchard" type="rss"
+            xmlUrl="http://feeds.feedburner.com/MobileOrchard" htmlUrl="http://mobileorchard.com"/>
+        <outline text="NSBlog" title="NSBlog" type="rss"
+            xmlUrl="http://www.mikeash.com/pyblog/rss.py" htmlUrl="http://www.mikeash.com/pyblog/"/>
+        <outline text="Oracle Technology Network Blog (aka TechBlog)"
+            title="Oracle Technology Network Blog (aka TechBlog)"
+            type="rss" xmlUrl="http://blogs.oracle.com/otn/xml/rss.xml" htmlUrl="http://blogs.oracle.com/otn/"/>
+        <outline text="Piper's Journal" title="Piper's Journal"
+            type="rss"
+            xmlUrl="http://www.figtreeanglican.org.au/pipers/journal/journal.rss" htmlUrl="http://www.bigfoot.com/~phillip_piper"/>
+        <outline text="PrEV" title="PrEV" type="rss"
+            xmlUrl="http://bill.dudney.net/roller/objc/feed/entries/atom" htmlUrl="http://bill.dudney.net/roller/objc/"/>
+        <outline text="RoughlyDrafted Magazine: Tech Q1 2007"
+            title="RoughlyDrafted Magazine: Tech Q1 2007" type="rss"
+            xmlUrl="http://www.roughlydrafted.com/RD/Q4.06/rss.xml" htmlUrl="http://www.roughlydrafted.com/RD/TechQ407/TechQ407.html"/>
+        <outline text="Slashdot" title="Slashdot" type="rss"
+            xmlUrl="http://rss.slashdot.org/Slashdot/slashdot" htmlUrl="http://slashdot.org/"/>
+        <outline text="SQL Developer Announcements"
+            title="SQL Developer Announcements" type="rss"
+            xmlUrl="http://forums.oracle.com/forums/rss/rssannounce.jspa?forumID=260" htmlUrl="https://forums.oracle.com/forums"/>
+        <outline text="tap tap tap" title="tap tap tap" type="rss"
+            xmlUrl="http://taptaptap.com/blog/feed/" htmlUrl="http://taptaptap.com/blog"/>
+        <outline text="Tapity" title="Tapity" type="rss"
+            xmlUrl="http://feeds.feedburner.com/Tapity" htmlUrl="http://tapity.com"/>
+        <outline text="The Mac Developer Network Blog"
+            title="The Mac Developer Network Blog" type="rss"
+            xmlUrl="http://feeds.feedburner.com/MdnHome?format=xml" htmlUrl="http://ideveloper.tv/blog"/>
+        <outline text="The Official Google Blog"
+            title="The Official Google Blog" type="rss"
+            xmlUrl="http://feeds2.feedburner.com/blogspot/MKuf" htmlUrl="http://googleblog.blogspot.com/"/>
+        <outline text="The Pool Room" title="The Pool Room" type="rss"
+            xmlUrl="http://www.pool-room.com/feed/" htmlUrl="http://www.pool-room.com"/>
+        <outline text="The Unofficial Apple Weblog (TUAW)"
+            title="The Unofficial Apple Weblog (TUAW)" type="rss"
+            xmlUrl="http://feeds.tuaw.com/weblogsinc/tuaw" htmlUrl="http://www.tuaw.com"/>
+        <outline text="Theobroma Cacao" title="Theobroma Cacao"
+            type="rss" xmlUrl="http://theocacao.com/index.rss" htmlUrl="http://theocacao.com/"/>
+        <outline text="TheServerSide.com: News"
+            title="TheServerSide.com: News" type="rss"
+            xmlUrl="http://www.theserverside.com/rss/theserverside-rss2.xml" htmlUrl="http://www.theserverside.com"/>
+        <outline text="Think Secret" title="Think Secret" type="rss"
+            xmlUrl="http://www.thinksecret.com/rss.xml" htmlUrl="http://www.thinksecret.com/"/>
+        <outline text="Upcoming Resources" title="Upcoming Resources"
+            type="rss"
+            xmlUrl="http://live.eclipse.org/eclipse_live_upcoming/feed" htmlUrl="http://live.eclipse.org/eclipse_live_upcoming"/>
+    </body>
+</opml>

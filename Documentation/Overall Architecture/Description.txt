@@ -1,0 +1,32 @@
+General:
+This architecture is more like a repository architecture. All data are stored in the database (database server). Other sub-systems or services store or update data using the same database. All characteristics are the same as the repository architecture.
+At the early iteration (I am assuming using iterative process model), data are transferred  directly to the database. At the late iteration, there should be a cache system to enhance the efficiency.
+As this architecture likes a combination of repository architecture and client and server architecture, it is easy to backup and easy to add new sub-systems. Or in another way to say, 3-tier architecture:
+Tier 1 - Clients
+Tier 2 - Servers
+Tier 3 - Database
+
+Refresh Service:
+This service is also known as the back-end service. The main functionality is to refresh the the news in the database from the feed source which is defined in the database. The period of refreshing is defined as a constant time.
+In the later iteration, it will be able to be controlled by external sub-systems. For example: Refresh now, pause, stop or change the refresh period. This can be implemented using signal for process or socket for threaded server technique.
+For turning the feed source into the database, all lot of parsers are used as plugins.
+
+Web Server:
+This is the main front-end, interacting with the user via browser. This part involves main business logic flow and account control. Cookies may used for stateless process not only for the Web Server but also for the PDF Generator.
+
+PDF Generator:
+This part is more like a MVC architecture.
+- Model : Database
+The database is the model which is different with the original MVC architecture. It will not have a entity class because the Refresh Service and PDF Generator may be function oriented.
+- Controller : Web Server
+It adds, modifies, deletes data in the database.
+- View : PDF Generator
+This could be generalized as the generator, generating any kinds of format of files. Itself could be a tool or a service. The architecture now is assuming this part is a service.
+The client has two way to get the pdf file.
+1. The client visit the web server and request the pdf file. Then web server connect to the PDF generator to obtain the pdf file and send it to the user via browser.
+2. The client runs the downloader application on the client side and requests the pdf file. Then the application directly talk to the pdf generator through socket technology.
+The pdf generator should have cache system in order to avoid generating duplicated files and DoS attack :)
+
+Database:
+This is the database server which should be able to deal with concurrent process.
+When construct and design the database, notice that the user and feeds are aggregation relationship not composition relationship (In another word: Mapping).

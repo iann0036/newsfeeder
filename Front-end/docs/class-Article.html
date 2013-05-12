@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="generator" content="ApiGen 2.4.0">
+
+	<title>Class Article | News Feeder</title>
+
+	<script type="text/javascript" src="resources/combined.js?1841058525"></script>
+	<script type="text/javascript" src="elementlist.js?4217586521"></script>
+	<script type="text/javascript">
+		var ApiGen = ApiGen || {};
+		ApiGen.options = {"elementDetailsCollapsed":true,"elementsOrder":"natural"};
+	</script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3295955786">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+		<div id="groups">
+
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-AccountsManager.html">AccountsManager</a></li>
+				<li class="active"><a href="class-Article.html">Article</a></li>
+				<li><a href="class-ArticleCollection.html">ArticleCollection</a></li>
+				<li><a href="class-CommentCollection.html">CommentCollection</a></li>
+				<li><a href="class-DatabaseConnection.html">DatabaseConnection</a></li>
+				<li><a href="class-DataCollection.html">DataCollection</a></li>
+				<li><a href="class-FeedCollection.html">FeedCollection</a></li>
+				<li><a href="class-GUIMaker.html">GUIMaker</a></li>
+				<li><a href="class-ImageCollection.html">ImageCollection</a></li>
+				<li><a href="class-ServiceSocket.html">ServiceSocket</a></li>
+				<li><a href="class-SheetCollection.html">SheetCollection</a></li>
+				<li><a href="class-Stats.html">Stats</a></li>
+				<li><a href="class-User.html">User</a></li>
+				<li><a href="class-UserCollection.html">UserCollection</a></li>
+				<li><a href="class-Weather.html">Weather</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text">
+		<input type="submit" value="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Article</h1>
+
+	<div class="description">
+	
+<p>Provides storage class with getters for a single article</p>
+
+<pre>
+</pre>
+
+	</div>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+
+				<b>Author:</b>
+				Ian Mckay &lt;<a
+href="mailto:im607&#64;uowmail.edu.au">im607&#64;<!---->uowmail.edu.au</a>&gt;<br>
+		<b>Located at</b> <a href="source-class-Article.html#16" title="Go to source code">Article.php</a><br>
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Article.html#35" title="Go to source code">__construct</a>( <span>integer <var>$id</var></span>, <span>integer <var>$sheetid</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Initializes Article class, creates new database connection</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Initializes Article class, creates new database connection</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$id</var></dt>
+					<dd><code>integer</code><br> the items id</dd>
+					<dt><var>$sheetid</var></dt>
+					<dd><code>integer</code><br> the sheets id where the item resides in</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTitle" id="_getTitle">
+
+		<td class="attributes"><code>
+			
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTitle">#</a>
+		<code><a href="source-class-Article.html#72" title="Go to source code">getTitle</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the title of the article</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the title of the article</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>returns the title<br>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAuthor" id="_getAuthor">
+
+		<td class="attributes"><code>
+			
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAuthor">#</a>
+		<code><a href="source-class-Article.html#80" title="Go to source code">getAuthor</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the author of the article</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the author of the article</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>returns the author<br>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getGeo" id="_getGeo">
+
+		<td class="attributes"><code>
+			
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getGeo">#</a>
+		<code><a href="source-class-Article.html#88" title="Go to source code">getGeo</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the geolocation of the article</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the geolocation of the article</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>returns the geolocation in the form -112.45225,35.24551<br>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTime" id="_getTime">
+
+		<td class="attributes"><code>
+			
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTime">#</a>
+		<code><a href="source-class-Article.html#96" title="Go to source code">getTime</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the post date of the article</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the post date of the article</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>returns the articles posting date in string format<br>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getURL" id="_getURL">
+
+		<td class="attributes"><code>
+			
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getURL">#</a>
+		<code><a href="source-class-Article.html#104" title="Go to source code">getURL</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the URL of the article</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the URL of the article</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>returns the articles original url<br>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getContent" id="_getContent">
+
+		<td class="attributes"><code>
+			
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getContent">#</a>
+		<code><a href="source-class-Article.html#112" title="Go to source code">getContent</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the article content</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the article content</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>returns the article content<br>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getFeedName" id="_getFeedName">
+
+		<td class="attributes"><code>
+			
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFeedName">#</a>
+		<code><a href="source-class-Article.html#120" title="Go to source code">getFeedName</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the feedname of the article</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the feedname of the article</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>returns the name of the feed in which the article belongs to<br>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		News Feeder API documentation generated by <a href="http://apigen.org">ApiGen 2.4.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

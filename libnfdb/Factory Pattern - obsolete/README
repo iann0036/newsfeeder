@@ -1,0 +1,114 @@
+=====================================================================================
+1. Compilation Requirements
+=====================================================================================
+
+1.1 c++ library package requirements
+- g++ 
+- make
+
+1.2 Java library package requirements
+- g++
+- make
+- swig
+- jdk
+- jdk source
+
+1.3 PHP library package requirements
+- g++
+- make
+- swig
+- php-dev
+
+=====================================================================================
+2. Compiling/Installing the Library
+=====================================================================================
+Note: Before doing anything here, make sure the compilation requirements are met (see section 1)
+
+2.1 Make and install the c++ library
+make
+sudo make install
+
+2.2 Make and install the java library
+make java
+sudo make install
+
+2.3 Make and install the php library
+make php
+sudo make install
+
+2.4 Installing the library without compiling on the target machine
+The purpose here is to avoid using development tools on a production machine
+Step 1 - compile and install on a development machine
+Step 2 - Delete /usr/include/libnfdb and /usr/lib/libnfdb on the production machine
+Step 3 - Copy the files from /usr/include/libnfdb and /usr/lib/libnfdb on the development machine
+         to their respective locations on the production machine
+
+These steps should allow for a clean deployment.
+
+=====================================================================================
+3 Compiling the examples
+=====================================================================================
+
+Examples require the respective libnfdb libraries to be installed
+For example, the java library requires you to make and install the java library before making the java example
+
+3.1 Compile all examples
+make example
+
+3.2 Compile only the c++ example
+Go to the examples/c++ directory and run make
+
+3.3 Compile only the java example
+Go to the examples/java directory and run make
+
+3.4 Compile only the php example
+Go to the examples/php directory and run make
+You can run the php example by using:
+php --define extension=/usr/lib/libnfdb/libnfdb_php.so phpexample.php
+
+=====================================================================================
+4 How to use the library - C++!!!
+=====================================================================================
+Note: You can also look at the working examples under examples/language for more info.
+
+Step 1 - Ensure that you have installed the library (see section 2). 
+         If you do not wish to compile the library on the production machine then you can follow the steps in Section 2
+
+Step 2 - #include <libnfdb/dbfactory.h> and any other headers you need (see /usr/include/libnfdb)
+
+Step 3 - In your compilation steps add -I/usr/include/libnfdb to let g++ know where the libnfdb headers are
+
+Step 4 - In your linking steps add -I/usr/include/libnfdb -L/usr/lib/libnfdb -lnfdb -Wl,--rpath=/usr/lib/libnfdb 
+         so that g++ knows where the libnfdb library exists and the headers are.
+
+Finished! Your program should compile!
+
+=====================================================================================
+5 How to use the library - Java!!!
+=====================================================================================
+Note: You can also look at the working examples under examples/language for more info.
+
+Step 1 - Ensure that you have installed the library (see section 2). 
+         If you do not wish to compile the library on the production machine then you can follow the steps in Section 2.4
+
+Step 2 - Add System.loadLibrary("nfdb_java"); somewhere near the start of your programs execution
+
+Step 3 - When compiling, add the following
+         -d . /usr/include/libnfdb/java/*.java
+
+Finished! Your program should compile!
+
+=====================================================================================
+6 How to use the library - PHP!!!
+=====================================================================================
+Note: You can also look at the working examples under examples/language for more info.
+
+Step 1 - Ensure that you have installed the library (see section 2). 
+         If you do not wish to compile the library on the production machine then you can follow the steps in Section 2.4
+
+Step 2 - Add this line to php.ini: extension=/usr/lib/libnfdb/libnfdb.so
+         ==OR==
+         Add this line somewhere early in the execution of the page: dl("/usr/lib/libnfdb/libnfdb.so");
+
+
+Finished! Your page should compile!

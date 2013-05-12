@@ -1,0 +1,757 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	
+	<title>King Size documentation</title>
+	
+	<link rel="stylesheet" href="styles/styles.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="scripts/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript">			 
+    $(document).ready(function() {
+	    		$('.toc_link').click(function() {
+	  			 	$("#toc_hide").fadeIn('fast');
+	  			 	$("#toc_hide").animate("opacity, .5");
+	  			 	$('#wrapper').css('margin-left', '340px');
+	  			 	$('#wrapper').css('width', '630px');
+	  			 	$('.warning, .goodnews').css('width', '400px');
+	  			 	
+	  			 	
+	  			 	return false;
+				});
+				
+				$('.close').click(function() {
+	  			 	$("#toc_hide").fadeOut('fast');
+	  			 	$('#wrapper').css('margin', '0 auto');
+	  			 	$('#wrapper').css('width', '920px');	
+	  			 	$('.warning, .goodnews').css('width', '700px'); 	
+	  			 	return false;
+				});
+				
+      });	      
+	</script>
+</head>
+
+<body>
+<div id="wrapper">
+
+<a class="toc_link" href="#">TOC</a>
+
+<div id="title">
+<div class="denoizzed">
+	<p>Denoizzed</p>
+	<ul>
+	<li><a class="profile" href="http://themeforest.net/user/denoizzed?ref=denoizzed">Themeforest profile</a></li>
+	<li><a class="twitter" href="http://twitter.com/denoizzed">Twitter</a></li>
+	<li><a class="website" href="http://denoizzed.com">Website</a></li>
+	</ul>
+	</div>	
+	
+	
+	<div class="owm">
+	<p>Our Web Media</p>
+	<ul>
+	<li><a class="profile" href="http://themeforest.net/user/ourwebmedia?ref=ourwebmedia">Themeforest profile</a></li>
+	<li><a class="twitter" href="http://twitter.com/OurWebMedia">Twitter</a></li>
+	<li><a class="website" href="http://ourwebmedia.com">Website</a></li>
+	</ul>
+	</div>	
+	
+	
+	
+</div>
+
+<h1>Documentation</h1>
+<p>Thank you for purchasing "King Size" template. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page <a href="http://themeforest.net/user/denoizzed?ref=denoizzed">contact form</a>.</p>
+<div class="goodnews">
+<p class="goodnewssign">Good news</p>
+<p>You can easily access the <strong>Table of contents</strong> from any place of this document by clicking "TOC" in the upper left corner of your screen.</p></div>
+
+<div class="goodnews">
+<p class="goodnewssign">Good news</p>
+<p>All video tutorials assosiated with the theme setup can be found here: <a href="http://screenr.com/user/kingsizetheme">http://screenr.com/user/kingsizetheme</a> (please note, we'll be adding more and updating these as time progresses). If you've any requests for video tutorials please feel free to <a href="mailto:support@kingsizetheme.com">email</a> them to us.</p></div>
+
+<div class="goodnews">
+<p class="goodnewssign">Good news</p>
+<p><b>Important Note</b> about <b>Updating Your Template</b>: First and most important, ALWAYS perform a full backup before updating your template. Its better to be safe than sorry. To update, simply download the updated file from Theme Forest (its free, just go to your Downloads section) and upload to overwrite the existing template files. Once you have uploaded the changes, you need to go to <b>Theme Settings</b> and <b>RE-SAVE YOUR SETTINGS</b>. This will ensure the new features are used correctly. Do note that this will not change any of your previous settings. Those will be saved from your previous setup.</p>
+<p>You can find the complete record of updates within the <a href="#changelog">Change Log</a>, found at the bottom of this help file.</p></div>
+
+<div id="toc_hide">	
+<a href="#" class="close">Close TOC</a>
+<h2>Table of contents</h2>
+<a href="#" class="close">Close TOC</a>
+<ol>
+<li><a href="#quick_overview">Quick Overview</a></li>
+<li><a href="#install"> Installation & Setup</a></li>
+<li><a href="#options"> Admin Theme Options</a></li>
+<li><a href="#background_slider"> Homepage Background Slider</a></li>
+<li><a href="#custom_menus">Create Custom Menus</a></li>
+<li><a href="#sidebar">Sidebars & Widgets</a></li>		
+<li><a href="#blog">Creating A New Blog</a></li>
+<li><a href="#gallery">Creating A New Gallery</a></li>
+<li><a href="#portfolio">Creating A Portfolio</a></li>
+<li><a href="#contact">Setting Up The Contact Page</a></li>		
+<li><a href="#shortcodes">Using The Shortcodes</a></li>
+<li><a href="#hints">Hints, Tips & Faqs</a></li>
+<li><a href="#css"> CSS</a></li>
+<li><a href="#javascript"> Javascript</a></li>
+<li><a href="#resources">Used Resources</a></li>
+<li><a href="#authors">Authors And Creators</a></li>
+<li><a href="#coming">Features Coming Soon In Upcoming Releases</a></li>
+<li><a href="#afterword">Afterword</a></li>
+<li><a href="#changelog">Change Log</a></li>
+</ol>
+
+</div>
+
+<div id="toc">
+<h2>Table of contents</h2>
+<ol>
+<li><a href="#quick_overview">Quick Overview</a></li>
+<li><a href="#install"> Installation & Setup</a></li>
+<li><a href="#options"> Admin Theme Options</a></li>
+<li><a href="#background_slider"> Homepage Background Slider</a></li>
+<li><a href="#custom_menus">Create Custom Menus</a></li>
+<li><a href="#sidebar">Sidebars & Widgets</a></li>		
+<li><a href="#blog">Creating A New Blog</a></li>
+<li><a href="#gallery">Creating A New Gallery</a></li>
+<li><a href="#portfolio">Creating A Portfolio</a></li>
+<li><a href="#contact">Setting Up The Contact Page</a></li>		
+<li><a href="#shortcodes">Using The Shortcodes</a></li>
+<li><a href="#hints">Hints, Tips & Faqs</a></li>
+<li><a href="#css"> CSS</a></li>
+<li><a href="#javascript">Javascript</a></li>
+<li><a href="#resources">Used Resources</a></li>
+<li><a href="#authors">Authors And Creators</a></li>
+<li><a href="#coming">Features Coming Soon In Upcoming Releases</a></li>
+<li><a href="#afterword">Afterword</a></li>
+<li><a href="#changelog">Change Log</a></li>
+</ol>
+
+
+</div>
+
+<h2 id="quick_overview">1. QUICK OVERVIEW</h2>
+
+<p>The King Size template is a unique template designed with Businesses, Photographers, Designers and etc., in mind, for the purpose of creating a dynamic looking Portfolio that caters to a variety of users and uses.</p>
+<p>With a fullscreen background and many custom options, King Size offers you many possibilities. Including 5 very different galleries to be used for portfolios and galleries, such as <em>"prettyPhoto"</em>, <em>"FancyBox"</em>, <em>"Colorbox"</em>, <em>"slideViewer"</em> and <em>"Galleria"</em>.</p>
+<p>It truly is simple. You just upload your images through the default WordPress Media Gallery, select your desired Gallery-type and layout style, click "<strong>Publish" </strong>and they're instantly ready and viewable! 
+</p>
+<div class="goodnews">
+<p class="goodnewssign">Good news</p>
+<p>Do you have an idea for a feature that can be included in the template? Don't hesitate to <a href="mailto:support@kingsizetheme.com">email</a> us. Thanks in advance for any suggestions or feedback you might have to offer!</p></div>
+
+
+
+<h2 id="install">2. INSTALLATION & SETUP</h2>
+<p>It takes less than 5 minutes to install setup and get your website running. Just follow these steps mentioned below and you should have absolutely no issues. However if you do, contact us today for support, using the <a href="http://themeforest.net/item/king-size-fullscreen-background-wordpress-theme/discussion/166299">comments</a> or <a href="http://www.kingsizetheme.com/help/">support</a> ticket system mentioned on the template <a href="http://themeforest.net/item/king-size-fullscreen-background-wordpress-theme/166299">description page</a>. Alternatively, you can write an email to <a href="mailto:support@kingsizetheme.com">support@kingsizetheme.com</a> and a new ticket will be opened automatically. Allow up to 24 hours before receiving a response. While we do our best to be as quick as possible, sometimes we are delayed. In advance, we'd like to thank you for your patience while answering all your support questions.</p>
+
+
+<h3 id="downloaded">A. Downloaded Files</h3>
+<p>Inside the zip you've downloaded from ThemeForest, you will find the following:
+	
+	<ul>
+	
+<li><strong>Documentation</strong>: Includes all the help files, credits and video tutorial resources.</li>
+<li><strong>PSD Files</strong>: All the necessary PSD files associated to the King Size template.</li>
+<li><strong>Template Folder</strong>: Containing the zipped folder for installing inside WordPress.</li>
+
+	</ul>
+</p>
+
+<h3 id="uploading">B. Uploading King Size</h3>
+<p>To upload the template to your WordPress website, you'll need either to access your server space via FTP or Web Manager and install the "kingsize" template to the following path (we're using <a href="http://filezilla-project.org/">FileZilla</a>):</p>
+<p><strong>WordPress Directory:</strong> > <strong>wp-contents</strong> > <strong>themes</strong> > <strong>[upload the KingSize zipped folder here]</strong></p>
+<p>Once you've uploaded the zipped folder, you'll be required to unpack the folder and the contents within in so WordPress can interact with those files stored inside the folder.</p>
+<div class="goodnews">
+<p class="goodnewssign">Good news</p>
+<p>Note: It is not required to be uploaded as a zip, but does speed up the process while uploading since its compressed and in a smaller format. Unpacking the template automatically creates the folder "kingsize" with all the corresponding files necessary.</p></div>
+
+
+
+<h3>C. Installing & Activating King Size</h3>
+<p>Once uploaded to <strong>wp-contents</strong> > <strong>themes</strong> > <strong>[kingsize folder here]</strong> you will need to log into your WordPress dashboard, locate the "Appearance" from the left-hand sidebar and click the "Themes" option. Here you'll be able to activate the newly installed template, KingSize.</p>
+<p>If you do not see the template available via <strong>Appearance</strong> > <strong>Themes</strong>, than you may wish to recheck the upload you've completed and make sure you've unzipped the folder KingSize.</p>
+
+<h3 id="exp_install">D. Express Install & Setup</h3>
+
+<div class="video">
+<object classid='clsid:d27cdb6e-ae6d-11cf-96b8-444553540000' codebase='http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,115,0' width='560' height='345'><param name='movie' value='http://screenr.com/Content/assets/screenr_1116090935.swf' /><param name='flashvars' value='i=180346' /><param name='allowFullScreen' value='true' /><embed src='http://screenr.com/Content/assets/screenr_1116090935.swf' flashvars='i=180346' allowFullScreen='true' width='560' height='345' pluginspage='http://www.macromedia.com/go/getflashplayer'></embed></object></div>
+
+<p>The express install can be found inside the "Documentation" folder you've downloaded from Theme Forest. This express setup is in the format of an ".xml" file, locate the file:</p>
+<p>Import File: <strong>express-setup.xml</strong> [located in the "<strong>Documentation</strong>" folder]</p>
+<p>With this file, you can create an express setup which will give you an end result that looks exactly like the demo you've seen prior to purchasing the template. This xml file will allow you to re-create exactly what it is we've already created on the demo and gives you a head start on getting your website setup and ready to use so you can edit and manage it.</p>
+<p>If you've never imported an .xml install, you can follow these quick simple steps:
+	
+	<ol>
+	
+<li>Log into your WordPress Dashboard using your username and password.</li>
+<li>In the left-hand sidebar, locate "<strong>Tools</strong>" and click the option to "<strong>Import</strong>" into WordPress.</li>
+<li>Next you'll need to select the type of Import you'll be doing, we want WordPress.</li>
+<li>You'll then be asked to install the Importer, click "<strong>Install Now</strong>" on the right hand side.</li>
+<li>Now you'll want to "<strong>Activate, Install and Run the Importer</strong>" you've just installed.</li>
+<li>Now you'll want to select "Choose a file" and locate the .xml file we've included.</li>
+<li>It'll ask you to select a user to assign these posts, pages, etc. to, select your account.</li>
+<li>It may take a few minutes to install depending on your connection and web server.</li>
+<li>Once the import has completed, you should now have all the included setup done.</li>
+
+	</ol>
+	
+<div class="goodnews">
+<p class="goodnewssign">Good news</p>
+<p>Note: Once you've installed your XML Express Setup, you want to go to <strong>Appearance</strong> > <strong>Menus</strong> and assign the new <strong>Main Menu</strong> to the Header Menu option for these items to display in the navigation.  Also note that in order to include the "Menu Subtitles" / "Descriptions" beneath each menu item, you have to click the <strong>Screen Options</strong> tab at the top and checkmark the option for <strong>Descriptions</strong>.</p></div>
+
+<p>At this point, your website should now take the form you've seen available in our demo. </p>
+
+
+<h2 id="options">3. ADMIN THEME OPTIONS</h2>
+<p>Located at the bottom of your WordPress Dashboard sidebar, you'll find "<strong>KingSize WP</strong>". It is this area that you'll use to customize the following mentioned below.</p>
+
+<div class="video">
+<object classid='clsid:d27cdb6e-ae6d-11cf-96b8-444553540000' codebase='http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,115,0' width='560' height='345'><param name='movie' value='http://screenr.com/Content/assets/screenr_1116090935.swf' /><param name='flashvars' value='i=180366' /><param name='allowFullScreen' value='true' /><embed src='http://screenr.com/Content/assets/screenr_1116090935.swf' flashvars='i=180366' allowFullScreen='true' width='560' height='345' pluginspage='http://www.macromedia.com/go/getflashplayer'></embed></object></div>
+
+<h3>A. Logo Options:</h3>
+<p>You have two options, the first is to upload an image directly from your computer and the second is to paste the URL of the image you want to use for your logo.</p> 
+<p>The specific size for this logo area is "<strong>220 (w) by 200 (h)</strong>". For best quality results, its suggested you try and stay within those mentioned sizes although is of course optional.</p>
+<p>For the purpose of the allotted space available, Timthumb has been included for the logo resizing.</p>
+
+<h3>B. Global Background Preferences</h3>
+<p>Here you will want to upload an image that will be assigned to all pages, sections and posts as your default Global Background.  This background image can be changed per page and post by using the <em>Write-Panel</em> option present when editing / creating a new page or post.  If you are not using the Homepage Background Slider, this image will become your homepage background.</p>
+<p>Following this option you've the ability to enable or disable the <em>Background Grid Overlay</em>.  This will help darken the background images on all pages / posts other than your homepage to keep the readers focus on the content rather than the background image.</p>
+
+<div class="goodnews">
+<p class="goodnewssign">Good news</p>
+<p><strong>Important Reminder</strong> to set the folder permissions mentioned beneath here to <strong>777</strong>: </p> <p>/wp-content/themes/kingsize/<strong>cache</strong> <br /> /wp-content/themes/kingsize/images/<strong>upload</strong></p> <p>Forgetting the set these folder permissions will result in images not displaying properly on your website.</p></div>
+
+<h3>C. Homepage Background Slider Preferences:</h3>
+<p>This next option allows you to pre-set various options related to your Background Slider. In order to use the homepage background slider, you must first ensure its enabled and have uploaded first some images via the <strong>Background Slider</strong> option beneath the menu item "KingSize WP". If no background images are present the slider will not work. From this point, follow the instructions provided in the tooltip next to each option by mousing over the "Help / Question-mark" icons.</p>
+
+<h3>D. Navigation Menu Preferences:</h3>
+<p>Here you'll have some options available to you for controlling features involved with the Navigation Menu, such as: <em>"Enabling the Hide / Show"</em> functionality, <em>"Enabling or disabling the Tooltip"</em> when mousing over the hide / show arrow, as well the ability to include custom Tooltip Messages for when in the mouse-over state.</p>
+
+<h3>E. Post / Page (Blog) Preferences:</h3>
+<p>These options are related directly to Pages and Posts within KingSize WordPress. You've options such as <em>"Enabling Blog Excerpts"</em> or <em>"Enabling Full Contents"</em>, as well things like <em>"Enabling / Disabling the Sidebars"</em>, <em>"Enabling the Widget Ready Footer"</em>, customizing the <em>"Read more..."</em> text shown after post excerpts, and even the option to enable comments beneath your Portfolio / Galleries.</p>
+<p>Please note: When enabling comments for your Portfolio, this still requires you enabling the comments from within that page.  If comments for your pages / posts are not already enabled, you need to locate the <strong>Screen Options</strong> at the top of the page, click this and it will expand. Once clicked, locate the option for "Discussions" and checkmark the box beside it. This step does require two steps to complete.</p>
+
+<h3>F. Style Preferences</h3>
+<p>You'll have the option set the colors for text, headings, menu items, mouse over effects, active menu items, tooltip messages, background overlays and etc. As well, each of these options includes a help icon beside it which can be hovered over for helpful tips.</p>
+
+<h3>G. Contact Page Settings</h3>
+<p>Here is where you'll enter the email address associated with the default Contact Page template we've included with KingSize. Just enter the desired email address you would like to use when people are contacting you. Keep in mind, this contact form includes a hidden field designed for spammers that helps prevent the receiving of spam messages.</p>
+<p>Next you've the option to include a "Contact Success Message" which will be shown only after successfully completing the contact submission form. You can override the default by entering your message manually here and clicking save at the bottom or top.</p>
+
+<h3>H. Small Footer</h3>
+<p>To include a copyright inside the footer of your website, enter your details here and save.</p>
+
+<h3>I. Social Networks</h3>
+<p>Currently there is the ability to include up to 23 social networks inside your small footer at the bottom of the website. By entering in the URL associated with your Social Networks, they will automatically appear in the frontend of the website at the very bottom. We have also included the ability for you to preview the icons prior to using them.</p>
+<p>For example, to activate the<strong> "Twitter</strong>" social network, type in http://www.twitter.com/username.</p>
+<p>Where there are no URLs typed in, these social networks will not be displayed on the website.</p>
+
+<h3>J. Miscellaneous Settings</h3>
+<p>Here you are able to insert coding into the header if necessary by inserting the code.</p>
+<p>Following the <head>, you've also the ability to include your <strong>Google Analytics</strong> code by pasting it into the Google Analytics text area. This will automatically be included in all the pages, posts and sections throughout your website so you can start tracking your visitors.</p>
+
+<h2 id="background_slider">4. HOMEPAGE BACKGROUND SLIDER</h2>
+
+<p>To enable your Homepage Background Slider, make sure that inside the Theme Settings, you've already enabled this feature.</p>
+<p>From this point, beneath the KingSize WP menu option you will see "<strong>Background Slider</strong>", you'll want to select this option and follow the instructions below to get your slider setup and customized the way you want it...</p>
+
+<h3>A. Uploading Slider Images</h3>
+<p>When inside the "<strong>Background Slider</strong>" section, at the very top you will see the option to "Choose File" and when clicked will open a new window that allows you to select from your desktop (or anywhere within your computer) the images you want used within the slider. Now select the image and click "Open" once you've decided which image you want used. You can upload a maximum of 10 at a time.</p>
+
+<h3>B. Managing Slider Images</h3>
+<p>Now that you've uploaded those images, you probably want to organize them to display in the order you want. So from top to bottom, the rotation is in this order. You can easily drag and drop those images in the order you want at which point once dropped into place they are automatically saved in that order. You can re-order these images at anytime you wish, simply by repeating these steps.</p>
+
+<h3>C. Managing Slider Preferences:</h3>
+<p>Now if you want to manage the direction, transition types, intrevals (in seconds) or to disable the background slider, you just need to head back to the "General Theme Settings" and scroll down till you see the section titled "Homepage Background Slider Preferences" and make the changes you desire to see made. Each option has beside it a helpful tooltip when mousing over the questionmark icon.</p>
+
+<h3>D. Disabling the Slider:</h3>
+<p>To disable the slider just go into the General Theme Settings and uncheck the enabled slider box. You will want to make sure that the "Global Background Preferences" has an image uploaded and saved as this will become your static single background image on the homepage. With no image assigned here as your background, the homepage will by default show a black and unoccupted background.</p>
+
+<h2 id="custom_menus">5. CREATE CUSTOM MENUS</h2>
+
+<div class="video">
+<object classid='clsid:d27cdb6e-ae6d-11cf-96b8-444553540000' codebase='http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,115,0' width='560' height='345'><param name='movie' value='http://screenr.com/Content/assets/screenr_1116090935.swf' /><param name='flashvars' value='i=180394' /><param name='allowFullScreen' value='true' /><embed src='http://screenr.com/Content/assets/screenr_1116090935.swf' flashvars='i=180394' allowFullScreen='true' width='560' height='345' pluginspage='http://www.macromedia.com/go/getflashplayer'></embed></object></div>
+
+<p>Since the release of <strong>WordPress 3.0</strong>, creating menus has never been so easy. You can drag, drop and organize your menus with complete ease. Even link outside your website to other site URLs.</p>
+<p>If you've never before used the WordPress Custom Menus, we've created a tutorial to assist you with the setup of your KingSize menu. <p>Please refer to this video for further assistance setting up.</p>
+<p>By default, this template supports one menu, which is the "<strong>Header</strong>" menu.</p>
+<p>To get started, log into your Dashboard, locate "<strong>Appearance</strong>" in the sidebar and beneath that you will find "Menus". Here is where you will create the menu.</p>
+<p>Create a new menu called "<strong>Main Menu</strong>", then click save. Once saved, you'll want to assign that menu to the header by using the options left of this area, titled "<strong>Theme Options</strong>". If you've used the express install method, you can see this menu has already been created and setup for you.</p>
+<p>To include a description, at the top click "<strong>Screen Options</strong>", under this check the "<strong>Description</strong>" option.</p>
+
+
+<h2 id="sidebar">6. SIDEBARS & WIDGETS</h2>
+<p>This template comes with 2 widget ready sidebars and 1 widget ready footer. To include widgets, locate the area titled "<strong>Appearance</strong>" in your sidebar and select the "<strong>Widgets</strong>" from that menu selection.</p>
+<h3>A. Post / Blog Sidebar</h3>
+<p>Inside "Widgets" you will see a sidebar area titled "<strong>Main Blog Sidebar</strong>" and it is this sidebar that will appear throughout your website where specified. You just need to use the desired widgets of your choice, drag and drop into this area, then click save and you're done.</p>
+<p>Inside Theme Settings "KingSize WP" you can disable the sidebar for a full width blog post and archives if you wish not to use the sidebar.</p>
+<h3>B. Contact Sidebar Details</h3>
+<p>This widget area is designed for your Contact Page. When you assigned the Page Template "<strong>Contact</strong>", its here this sidebar will be active. You can either use the custom widget we've included to insert your "additional contact details", or add other widgets of your choice to this area by dragging and dropping them into this sidebar.</p>
+<h3>C. Footer Widget Ready</h3>
+<p>Here you'll find 3 widget ready areas designed for your footer. Each specific to the footer, one is designed for the left, another for the center and lastly the right footer column. You can also disable this footer section via Theme Settings > "KingSize WP" at anytime.</p>
+<p>Alike with the other widgets, you can drag and drop the desired widgets you wish to use.</p>
+<h3>D. KingSize Twitter Widget</h3>
+<p>To enable the KingSize Twitter widget in your sidebar, you need to go to "<strong>Appearance</strong>" > "<strong>Widgets</strong>" and locate the appropriate titled widget there. Now left click to drag and drop into the appropriate sidebar desired. Once selected, the widget will expand automatically asking you for some details to finalize the setup. You'll be required to provide:</p>
+<ol>
+<li><strong>Twitter Username</strong> (without @): So I would then enter "denoizzed" or "ourwebmedia" without the @.</li>
+<li><strong>Widget Title</strong>: Is the name of this widget. So I would then enter "Recent Tweets" or similar.</li>
+<li><strong>Set the # of Tweets to Display</strong>: By entering in the number "5" it will display the 5 most recent tweets.</li>
+</ol>
+<h3>E. Kingsize Gallery Widget</h3>
+<p>To enable the KingSize Gallery widget in your sidebar, you need to go to "<strong>Appearance</strong>" > "<strong>Widgets</strong>" and locate the appropriate titled widget there. Now left click to drag and drop into the appropriate sidebar desired. Once selected, the widget will expand automatically asking you for some details to finalize the setup. You'll be required to provide:</p>
+<ol>
+<li><strong>Title</strong>: This would be the name of the Widget you want when shown in the frontend sidebar.</li>
+<li><strong>How many images</strong>: Is the number of images I want to display, so I would enter the number "3".</li>
+<li><strong>Order by</strong>: Option to order the images displayed either by "Random" or "Latest" added images.</li>
+<li><strong>Image Link Type</strong>: Allows you to link to either the "Image", "Article" or "Page" associated with that image.</li>
+<li><strong>Image Hover Title</strong>: Also provides optional selection for where the image leads to.</li>
+<li><strong>Show only 1 image per post</strong>: "Yes" will use only one image from each gallery, while "no" will select recents.</li>
+</ol>
+
+<h2 id="blog">7. CREATING A NEW BLOG</h2>
+<p>To create your blog section within KingSize WordPress, you just need to follow these simple steps:</p>
+<h3>A. Create a new Page</h3>
+<p>First you'll need to go "Add a New Page" via the WordPress Dashboard and title it "Blog" or whatever it is you wish it to be called.  From this point, look to the right side of your page and you'll see an area titled "<strong>Page Attributes</strong>" and beneath here you'll see the option to select a page "<strong>Template</strong>". From this list, you want to select the "<strong>Blog Template</strong> and click Publish / Update.</p>
+<p>At this point, if you view the new page you created, automatically all posts made will be displayed within this Blog Page. Now assigning this to your menu is rather easy. Head head over to "Appearance" > "Menus" and assign the page you've created to your menu and place it wherever you'd like it displayed in the menu navigation bar. From that point, any published blog entries / posts will be displayed here.</p>
+
+<h3>B. Create a new Post</h3>
+
+<div class="video"><object classid='clsid:d27cdb6e-ae6d-11cf-96b8-444553540000' codebase='http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,115,0' width='560' height='345'><param name='movie' value='http://screenr.com/Content/assets/screenr_1116090935.swf' /><param name='flashvars' value='i=180384' /><param name='allowFullScreen' value='true' /><embed src='http://screenr.com/Content/assets/screenr_1116090935.swf' flashvars='i=180384' allowFullScreen='true' width='560' height='345' pluginspage='http://www.macromedia.com/go/getflashplayer'></embed></object></div>
+
+<p>When creating a new post that you want associated with your blog, just select the category "<strong>Blog</strong>" for this entry to appear in and whenever someone visits this area of your website they'll see that and all the other posts / entries associated with that category.
+<p>To include a featured image in your blog article, use the "<strong>Featured Image</strong>" to assign one when creating your new post.  This will automatically be displayed within the blog archives.</p>
+<h3>C. Add Custom Background</h3>
+<p>Inside your "<strong>Add New / Edit Posts</strong>" area, you will see beneath the contents area, a place known as the "<strong>write-panel</strong>". This area includes the ability for you to upload a new background image you want associated with that specific post. This will then override the default background image you previously setup in the Theme Options.</p>
+<p>If you do not want to upload an image but rather enter a URL to a background image of your choice, just enter the URL to that image in the text area and it'll appear when saved.</p>
+
+<h2 id="gallery">8. CREATING A NEW GALLERY</h2>
+
+<div class="video"><object classid='clsid:d27cdb6e-ae6d-11cf-96b8-444553540000' codebase='http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,115,0' width='560' height='345'><param name='movie' value='http://screenr.com/Content/assets/screenr_1116090935.swf' /><param name='flashvars' value='i=180377' /><param name='allowFullScreen' value='true' /><embed src='http://screenr.com/Content/assets/screenr_1116090935.swf' flashvars='i=180377' allowFullScreen='true' width='560' height='345' pluginspage='http://www.macromedia.com/go/getflashplayer'></embed></object></div>
+
+<p>Included are 5 different Gallery Templates and with 3 of those galleries includes 4 style options that can be assigned to the individual gallery when used. These do require being created in "Pages" and is not available through the use of "Posts", only pages.</p>
+<h3>A. Gallery Types</h3>
+<p>There are 5 galleries types included. These are (preview the live demo):</p>
+
+<ul>
+<li>Colorbox: <a href="http://www.kingsizetheme.com/portfolio/colorbox/2-columns">http://www.kingsizetheme.com/portfolio/colorbox/2-columns</a></li>
+<li>FancyBox: <a href="http://www.kingsizetheme.com/portfolio/fancybox/2-columns">http://www.kingsizetheme.com/portfolio/fancybox/2-columns</a></li>
+<li>prettyPhoto: <a href="http://www.kingsizetheme.com/portfolio/prettyphoto/2-columns">http://www.kingsizetheme.com/portfolio/prettyphoto/2-columns</a></li>
+<li>slideViewer: <a href="http://www.kingsizetheme.com/portfolio/slideviewer">http://www.kingsizetheme.com/portfolio/slideviewer</a></li>
+<li>Galleria: <a href="http://www.kingsizetheme.com/portfolio/galleria">http://www.kingsizetheme.com/portfolio/galleria</a></li>
+</ul>
+
+<p>To select a gallery, you need to create a "<strong>New Page</strong>" and inside this New Page, you'll see the option to assign a "<strong>Template</strong>" specific to this page. This is located to the right, is directly beneath the "<strong>Publish / Update</strong>" button in the area titled "<strong>Page Attributes</strong>".</p>
+<p>Now using this drop-down menu, you will see a variety of options here to be used with your new Page being created. Select the desired gallery type from the available selections here.</p>
+<h3>B. Selecting a Layout Style</h3>
+<p>Included with 3 of these gallery types, is 4 different layout styles to choose:</p>
+<ul>
+<li><strong>2 Column Layout</strong> (available with ColorBox, FancyBox and prettyPhoto - <a href="http://kingsizetheme.com">see demo site</a>)</li>
+<li><strong>3 Column Layout</strong> (available with ColorBox, FancyBox and prettyPhoto - <a href="http://kingsizetheme.com">see demo site</a>)</li>
+<li><strong>4 Column Layout</strong> (available with ColorBox, FancyBox and prettyPhoto - <a href="http://kingsizetheme.com">see demo site</a>)</li>
+<li><strong>Grid Layout</strong> (available with ColorBox, FancyBox and prettyPhoto - <a href="http://kingsizetheme.com">see demo site</a>)</li>
+</ul>
+<p>Selecting these layout styles will ONLY apply to your galleries when you've selected the Page Template it corresponds with. So even though you may have selected [i.e.,] 2 columns, if no portfolio type is selected it will not work.</p>
+<h3>C. Uploading your Images</h3>
+<p>We've decided to make use of the native WordPress Media Gallery for displaying your photos and images. It involves less work, less steps and faster end results...</p>
+<p>To add your images, you just need to locate the "<strong>Upload / Insert</strong>" area at the top of your "<strong>Add New Page</strong>", and just beneath the "<strong>Title</strong>" area of that page. You'll see beside this upload area, 4 small icons that when clicked will open a new window in lightbox.</p>
+<p>Click the first icon (looks like a picture frame) and this will allow you to attach / upload new media (image) files directly from your computer. You can also select more than just one image at a time by dragging your mouse and selecting multiple images at once.</p>
+<p>Once you have uploaded your images click "<strong>Save</strong>", and then exit out of the lightbox window. *<b>DO NOT INSERT THESE IMAGES INTO YOUR POST AFTER UPLOADING</b>* otherwise you will notice you have two types of galleries displaying in the Gallery Page you've just created. Remove the inserted gallery if you've done this.</p>
+<p>Now that you've uploaded those images, just close out of that lightbox window. Remember, do not insert those images. The way we have designed this template is it will automatically take those images you've uploaded and display them in the page you've created. If your seeing two types of images on your page, one looks like our demo while the other does not, this means you have inserted the gallery. Go to your post, in the "Content Editor" remove that inserted gallery / image and publish / update.</p>
+<p>We've also created a video tutorial for uploading and attaching images to help as a visual aid.</p>
+<h3>D. Managing your Images</h3>
+<p>You can manage your images through the "Media Gallery". Just return to the page you've created for your gallery and click the picture frame icon beside "Upload / Insert" and this will load the lightbox window once more. Inside here, you will see an area at the top titled "<strong>Gallery</strong>" and should display a number beside it representing the number of images you've attached.</p>
+<p>Click this Gallery tab and you'll be shown all the images related to this specific page.</p>
+<p>Once you see the images, you can drag and drop those images in the specific order you'd like them to appear in the frontend of your website. You can also click the "<strong>show</strong>" link to edit the titles, descriptions and details pertaining to those specific images in that gallery.</p>
+<p>Watch the video tutorial for a visual explanation of managing and editing your photos.</p>
+<h3>E. Add Custom Background</h3>
+<p>Just as you did with the posts inside your blog, you can create and assign a specific background image on all pages created. Either select the option to "<strong>upload</strong>" an image or enter the URL to the image you wish to use as your background for this specific page.
+Inserting a background image using the "<strong>write-panel</strong>" will allow you to override the default background you set up previously in the Theme Options. These changes will only affect the specific pages you assign those custom backgrounds to and nowhere else.</p>
+
+<h2 id="portfolio">9. CREATING A NEW PORTFOLIO</h2>
+<p>Inside your WordPress Dashboard, in the left-hand sidebar you will see the "<strong>Portfolio</strong>" menu option. Click this and you will have the option to view all "<strong>Portfolio</strong>" items, "<strong>Add New</strong>" portfolio items, and create "<strong>Portfolio Categories</strong>" that you can use to organize the different type of portfolios you wish to display on your site. This also enables you the ability to create multiple portfolios and assigning categories.</p>
+<h3>A. Adding a Portfolio Item</h3>
+<ol>
+<li>Click "<strong>Add New</strong>" and this will open the post-type for the portfolio item.</li><br />
+<li>Type in the title of your portfolio item where it says "<i>Enter title here</i>".</li><br />
+<li>Add in your actual portfolio page contents specific to that portfolio item.
+<br />- This information will be displayed when the "<strong>read more</strong>" is clicked on.
+<br />- The attached portfolio item will be displayed beneath these items contents.</li><br />
+<li>Beneath here you will find the corresponding "<strong>write-panel</strong>" options for your item.</li><br />
+<li>The first option is to "<strong>Upload an Image</strong>", this is if you want a single portfolio image.
+<br />- Click "<strong>browse</strong>", upload your image and click "<strong>insert</strong>" or copy and paste URL.
+<br />- You can also insert a URL to the image you want used as this portfolio item.</li><br />
+<li><strong>VIDEO PORTFOLIO ITEMS</strong> are found beneath the single image upload.
+<br />- You’ll need to include the "<strong>Image Thumbnail</strong>", click <i>browse > upload > insert image</i>.
+<br />- Paste the URL of your YouTube or Vimeo videos in the next write-panel option.
+<br />- You can also insert the "<strong>Embedded Code</strong>" for your videos to be displayed in the portfolio.
+<br />- Now include the "<strong>Video Height</strong>" if necessary. The <i>default height is 300 pixels</i> for this.</li><br />
+<li><strong>The Portfolio EXCERPT</strong> is what is shown on the portfolio page when being viewed.
+<br />- If no excerpt, it will automatically grab the first paragraph and display it accordingly.</li>
+</ol>
+<p>That’s it. It’s pretty simple. Now click the "<strong>Publish</strong>" or "<strong>Update</strong>" button to complete your changes.</p>
+
+<h3>B. Creating a Portfolio Page</h3>
+
+<p>So now you've successfully added a Portfolio item(s), you'll want to learn how to display those items. To do this, you need to create a new page using the page template "Portfolio". Once you create a Portfolio Page, you just simply assign which category for your Portfolios you want displayed and the rest is done automatically. See the below steps for instructions:</p>
+
+<ol>
+<li>Go to "<strong>Pages</strong>" in your sidebar and click "<strong>Add New</strong>".</li><br />
+
+<li>Title the portfolio page accordingly, ie., "<i>Music Videos</i>" or "<i>Photography</i>".
+<br />- You can create multiple portfolios by creating new pages.</li><br />
+
+<li>In the right sidebar of this page, look for "<strong>Page Attributes</strong>" and select from the dropdown "<strong>Portfolio</strong>". This will assign that page the Portfolio template you’ll be using.</li><br />
+
+<li>Scroll down till you see the "<strong>write-panel</strong>" and you’ll need to setup a few options:
+<br />A. <strong>Select a Portfolio Category</strong>: This uses the Categories you created for your Portfolio.
+<br />- If you created a category called "<i>Photography</i>" and you want this specific page to display all your photography images, than you would select that associated category to be used.
+<br />B. <strong>Portfolio Page Layouts</strong>: Although looks best with TWO and THREE column layouts, we have also made available the other layouts which are also used by the galleries for your interest.</li><br />
+
+<li>Lastly, you still have the option to assign a custom background image for this specific page.</li>
+</ol>
+
+<p>If you want text to show above your portfolios, when creating this page, just add the text to the contents box / editor and that text will display above the portfolios as shown in the demonstration.</p>
+
+<p>Once you have created this page, you’ll want to link it to your menu / navigation. To do this, go to "<strong>Appearance</strong>" > "<strong>Menus</strong>" and add the new page you just created to your navigation. Add a brief description if desired, click save and once done you should be able to see the new item in your menu.</p>
+
+<h2 id="contact"> 10. SETTING UP THE CONTACT PAGE </h2>
+<div class="video"><object classid='clsid:d27cdb6e-ae6d-11cf-96b8-444553540000' codebase='http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,115,0' width='560' height='345'><param name='movie' value='http://screenr.com/Content/assets/screenr_1116090935.swf' /><param name='flashvars' value='i=180389' /><param name='allowFullScreen' value='true' /><embed src='http://screenr.com/Content/assets/screenr_1116090935.swf' flashvars='i=180389' allowFullScreen='true' width='560' height='345' pluginspage='http://www.macromedia.com/go/getflashplayer'></embed></object></div>
+
+<h2 id="shortcodes">11. USING THE SHORTCODES</h2>
+<p>When creating a page or post you will see in the top of your toolbar an icon that resembles a unicorn, black in color surrounded by a white background. By clicking this, you can select from one of the available Shortcodes and insert them automatically into your pages and posts.</p> 
+<p>You can also view a live demo by visiting: http://www.kingsizetheme.com/shortcode-examples/</p> 
+<p><strong>1/3 and 2/3 Columns:</strong><br /> 
+<em>[one_third]</em> enter your text here <em>[/one_third]</em><br /> 
+<em>[two_thirds]</em> enter your text here<em> [/two_thirds]</em></p>
+
+
+<p><strong>1/3 Columns:</strong><br /> 
+<em>[one_third]</em> enter your text here<em> [/one_third]</em><br /> 
+<em>[one_third]</em> enter your text here <em>[/one_third]</em><br /> 
+<em>[one_third]</em> enter your text here <em>[/one_third]</em><br /> </p>
+
+<p><strong>Various Information Box Shortcodes:</strong><br />
+<em>[info_box] </em>enter your text here<em> [/info_box]</em><br /> 
+<em>[warning_box]</em> enter your text here <em>[/warning_box]</em><br /> 
+<em>[error_box]</em> enter your text here <em>[/error_box]</em><br /> 
+<em>[download_box]</em> enter your text here <em>[/download_box]</em><br /> </p>
+
+
+<p><strong>Tooltip Links / Uses:</strong><br />
+<em>[tooltip_link title="Tooltip Text Here" to="URL here"] </em>Text here <em>[/tooltip_link]</em></p>
+
+<p><strong>Blockquotes:</strong><br />
+<em>[blockquote] </em> enter your text here <em>[/blockquote]</em></p>
+
+<p><strong>Button Shortcodes:</strong><br />
+Orange: <em>[button to="http://www.url_here.com" color="orange"] </em>text here <em>[/button]</em><br />
+Red: <em>[button to="http://www.url_here.com" color="red"]</em> text here <em>[/button]</em><br />
+Rosy: <em>[button to="http://www.url_here.com" color="rosy"]</em> text here <em>[/button]</em><br />
+Blue: <em>[button to="http://www.url_here.com" color="blue"]</em> text here <em>[/button]</em><br />
+Green: <em>[button to="http://www.url_here.com" color="green"]</em> text here <em>[/button]</em><br />
+Pink: <em>[button to="http://www.url_here.com" color="pink"] </em>text here <em>[/button]</em><br />
+White:<em> [button to="http://www.url_here.com" color="white"] </em>text here <em>[/button]</em><br />
+Black: <em>[button to="http://www.url_here.com" color="black"]</em> text here <em>[/button]</em><br />
+Gray: <em>[button to="http://www.url_here.com" color="gray"]</em> text here <em>[/button]</em><br /></p>
+
+
+<h2 id="hints">12. HINTS, TIPS & FAQS</h2>
+
+<div class="video">
+<object classid='clsid:d27cdb6e-ae6d-11cf-96b8-444553540000' codebase='http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,115,0' width='560' height='345'><param name='movie' value='http://screenr.com/Content/assets/screenr_1116090935.swf' /><param name='flashvars' value='i=180405' /><param name='allowFullScreen' value='true' /><embed src='http://screenr.com/Content/assets/screenr_1116090935.swf' flashvars='i=180405' allowFullScreen='true' width='560' height='345' pluginspage='http://www.macromedia.com/go/getflashplayer'></embed></object></div>
+
+<ul>
+<li><strong>Permalinks:</strong>
+
+<p>
+Often asked is "how do I make pretty links" which is also referred to as "Permalinks". To do this, it's important you start your site with permalink structure prior to making posts and pages.  Otherwise, it's going to be a difficult task having to re-create those link permalink structures.</p>
+
+<p>
+Log into your dashboard, go to "Settings", find "Permalinks" and edit the structure to look like:</p>
+<p>
+/%category%/%postname%/</p>
+<p>
+If this is not the structure you want, you can learn more about Permalinks visiting WordPress:</p>
+<p>
+<a href="http://codex.wordpress.org/Using_Permalinks">http://codex.wordpress.org/Using_Permalinks</a></p>
+
+</li>
+<li><strong>Featured Images:</strong> 
+
+<p>
+King Size does support the use of Featured Images in your Blog postings.  Referring to the demo, you can see in the blog archive there is a featured image being displayed.  To do this you need to:</p>
+
+<ol>
+  <li>Click "<strong>Featured Image</strong>" link in the right sidebar when creating a new post.</li>
+  <li>A lightbox window will appear where you can upload / attach your image.</li>
+  <li>Select the desired image for your Featured Image and click "<strong>Upload</strong>".</li>
+  <li>Once the image has uploaded, it'll expand the image details / properties to set.</li>
+  <li>At the bottom, there is the option to make this image your "<strong>Featured Image</strong>".</li>
+  <li>Click "Save" after completing your post and the image will be carried into the frontend.</li>
+</ol>
+</li>
+
+<li><strong>	How to use "Custom Menus" in WordPress 3.0 + </strong>
+<p>Here's the official documentation: <a href="http://codex.wordpress.org/Appearance_Menus_SubPanel">http://codex.wordpress.org/Appearance_Menus_SubPanel</a> </p> </li>
+
+
+<li><strong>Unlimited use of "Custom Backgrounds" for Pages and Posts:</strong> 
+
+<p>
+Kingsize makes available a write-panel option in both "pages" and "posts" that allows you the ability to override the default global background previously set via Theme Options.  This means that on any individual page and/or post, you can have a unique background specific to its use.</p>
+<p>
+To include a background, scroll down beneath the contents of your post and you'll see an area titled "<strong>Override the default Background</strong>" with the option to either<strong> "enter a URL</strong>" or to "<strong>Upload a background directly from your computer</strong>".</p>
+<p>
+Once you've inserted your URL for the background image, or uploaded an image from your computer, complete the remainder of your entry and once ready, click "Publish / Update".  At this point, the background once saved will automatically override the global background assigned earlier through the Theme Options panel.</p></li>
+
+
+<li><strong>How to Install WordPress Themes:</strong> 
+<p>
+For complete documentation, view the official guide provided on behalf of WordPress, by visiting:<br /> <a href="http://codex.wordpress.org/Using_Themes">http://codex.wordpress.org/Using_Themes</a><br />and follow the documentation here.</p></li> 
+
+<li><strong>How to use Lightbox in WordPress Media Galleries</strong>
+<p>When inserting your gallery, there is an option that asks "<strong>Link Thumbnails To</strong>", you'll want to change this from "<i>Attachment Page</i>" to use "<strong>Image File</strong>" instead. This will allow for the lightbox effect to work. Otherwise, images will load in a new page.</p>
+<p>When inserting single images, just insert the image into your post and make sure its linked to the image. This will automatically apply the lightbox effect to those images inserted into your post.</p></li>
+
+<li><strong>Broken Template and/or Missing Style Sheet Error Message</strong>
+<p>One of the more common issues being reported. This is due to a mistake you've made, not at fault of our template. You are trying to upload the ENTIRE zipped folder you downloaded from Theme Forest. This is NOT correct. You need to open that folder you've downloaded and inside you will see another folder titled "<strong>Template v3</strong>", it is this folder you will find INSIDE the actual template. Either upload as a zip and extract on your server, or extract on your desktop and upload as a whole to the /themes/ directory.</p></li>
+
+</ul>
+
+<h2 id="css">13. CSS</h2>
+<p>
+CSS is contained in <strong>style.css</strong> file (<strong>root folder of theme</strong>). Styles for Internet Explorer are contained in <strong>stylesIE.css</strong> (for IE8, IE7), <strong>stylesIE7.css</strong> (for IE7) (<strong>/css</strong> folder). There are also 3 additional CSS files  - <strong>prettyPhoto.css</strong> (for prettyPhoto plugin), <strong>jquery.fancybox-1.3.1.css</strong> (for FancyBox plugin) and  <strong>colorbox.css</strong>(for Colorbox plugin) - all situated in <strong>/css</strong> folder. CSS for <strong>Galleria</strong> is in <strong>/js/galleria</strong> folder (<strong>galleria.classic.css</strong>) and <strong>slideViewer</strong> styles plugins are situated in <strong>style.css</strong> in the <em>Gallery styles</em> section. <br /> <br />
+
+Sections are separated with the comments like:
+	<pre>
+		/* ========= General Styles ========== */
+	</pre>
+	
+If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited.
+</p>
+
+<h2 id="javascript">14. JAVASCRIPT</h2>
+<p>
+Javascript files are situated in /js folder of the theme. They are enqueued in the theme in <strong>functions.php</strong> file.
+</p>
+<h4>General scripts</h4>
+<ul>
+<li><a href="http://jquery.com">jQuery library</a> - Javascript framework on Google CDN</li>
+<li><a href="http://cufon.shoqolate.com/">Cufon</a> - custom font replacement (PT Sans font); <strong>cufon-yui.js</strong> (main script) + <strong>PT_Sans.font.js</strong> (font itself) + <strong>PT_Sans_Narrow.font.js</strong> (narrow version of font) </li>
+<li><a href="http://jquery.malsup.com/cycle/">jQuery Cycle</a> - used for fullscreen background; <strong>jquery.cycle.min.js</strong></li>
+
+
+<li><strong>custom.js</strong> - contact form handling, gallery overlays, menu hiding, random image on load and more. It will be easier to understand the code if you examine the source code itself.</li>
+</ul>
+
+<h4>Gallery scripts</h4>
+<ul>
+<li><a href="http://galleria.aino.se/">Galleria jQuery plugin</a> - Galleria jQuery plugin (portfolio/gallery section); <strong>galleria folder</strong></li>
+<li><a href="http://www.gcmingati.net/wordpress/wp-content/lab/jquery/imagestrip/imageslide-plugin.html">slieViewer jQuery plugin</a> - plugin used for gallery (portfolio/gallery section); <strong>jquery.slideviewer.1.2.js + jquery.easing.1.3.js</strong></li>
+<li><a href="http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/">prettyPhoto jQuery plugin</a> - lightbox clone used for gallery (portfolio / gallery section); <strong>jquery.prettyPhoto.js</strong></li>
+<li><a href="http://fancybox.net/">FancyBox jQuery plugin</a> - lightbox clone used for gallery (portfolio/gallery section); <strong>jquery.fancybox-1.3.1.pack.js</strong> - notice we are using 1.3.1 version since 1.3.3 has some bugs in Opera / Chrome</li>
+<li><a href="http://colorpowered.com/colorbox/">ColorBox jQuery plugin</a> - lightbox clone used for gallery (portfolio/gallery section); <strong>jquery.colorbox-min.js</strong></li>
+</ul>
+
+		
+<h2 id="resources">15. USED RESOURCES</h2>
+<p>Template uses the following resources:
+	<ul>
+	<li><a href="http://jquery.com">jQuery library</a></li>
+	<li><a href="http://dev-tips.com/featured/ajax-and-php-contact-form">Modified version of Drew Douglass' AJAX PHP contact form </a></li>
+	<li><a href="http://cufon.shoqolate.com/">Cufon</a></li>
+	<li><a href="http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/">prettyPhoto jQuery plugin</a> 
+	<li><a href="http://www.fontsquirrel.com/fonts/PT-Sans">PT Sans font family</a></li> 	
+	<li><a href="http://galleria.aino.se/">Galleria jQuery plugin</a></li>
+	<li><a href="http://www.gcmingati.net/wordpress/wp-content/lab/jquery/imagestrip/imageslide-plugin.html">slideViewer jQuery plugin</a> </li>
+	<li><a href="http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/">prettyPhoto jQuery plugin</a> </li>
+	<li><a href="http://fancybox.net/">FancyBox jQuery plugin</a></li>
+	<li><a href="http://colorpowered.com/colorbox/">ColorBox jQuery plugin</a></li>
+	<li>Vista Scenery Photography: (with permission, only in demo) by <a href="http://www.hamaddarwish.com">http://www.hamaddarwish.com </a></li>
+	<li> <a href="http://www.komodomedia.com/blog/2009/06/social-network-icon-pack/">Komodo Social Icons</a></li>
+</ul>
+</p>
+
+<h2 id="authors"> 16. AUTHORS AND CREATORS </h2>
+<p>Concept, design and HTML/CSS code by <strong>Nick Shylo (Denoizzed)</strong> <a href="http://www.denoizzed.com "> http://www.denoizzed.com </a><br />
+WP version developed by <strong>Bryce Wisekal &amp; Kumar Sekhar</strong> of <strong>Our Web Media</strong> <a href="http://www.ourwebmedia.com">http://www.ourwebmedia.com</a><br />
+Hosting Services Provided by: <strong>Foxyhare Services</strong> at <a href="http://www.foxyhare.com">http://www.foxyhare.com</a><br /></p>
+
+<h2 id="coming">17. FEATURES COMING SOON IN UPCOMING RELEASES</h2>
+<ul>
+<li>Flash and Video supported Backgrounds</li>
+<li>Random Rotating Backgrounds</li>
+<li>Controllable Opacity via Theme Settings</li>
+<li>The ability to include Videos in Galleries</li>
+<li>Custom Widgets (Advertising, Twitter, Random Featured Images...)</li>
+<li>Fullscreen Slider and Slider Shortcodes</li>
+<li>Fullscreen Background Video Slider</li>
+<li>Additional Shortcodes and Tools to be used</li>
+<li>WP-Pagination Integration (third-party plugin)</li>
+<li>New and modified Theme Settings / Options panel</li>
+<li>Optional Page-enabled Sidebars (Widget Ready)</li>
+<li>...and you can bank on having more features too!</li>
+</ul>
+
+
+<h2 id="afterword">18. AFTERWORD</h2>
+<p> Thank you again for pusrchasing this template. Hope you and your users will like it! Again, if you have any questions, please contact us: <a href="http://themeforest.net/user/denoizzed?ref=denoizzed">Denoizzed</a> or <a href="http://themeforest.net/user/OurWebMedia?ref=OurWebMedia">OurWebMedia</a>. We'll be more than happy to help you! </p>
+
+<h3>Other templates</h3>
+<p>If you're interested in other premium templates by Denoizzed, please visit my <a href="http://themeforest.net/user/denoizzed?ref=denoizzed">Themeforest portfolio</a>. If you're interested in freebies and web design tutorials, please visit <a href="http://denoizzed.com">my site</a>. You can also <a href="http://twitter.com/denoizzed">follow me on Twitter</a>. Thanks in advance.</p>
+
+<p>If you've enjoyed the KingSize template, we ask you take a moment to vote our template and leave a comment and review if you wish.  Your support is greatly appreciated and we look forward to all your future business.  Thanks so much!</p>
+
+
+
+<h2 id="changelog">19. CHANGE LOG</h2>
+<p>KingSize WordPress will continue to grow over time and here we've included a complete change log of all those advancements we do take. We want you to be as informed as possible, while being able to take advantage of all the updates as we release them.
+<p><b>IMPORTANT</b>: Be sure to <b>BACKUP your website when making updates</b>. We cannot be held responsible for any losses.</p>
+<p>If you would like, we'd recommend downloading something similar to "<a href="http://www.deltopia.com/">Deltopia DeltaWalker</a>" to compare file changes. This is a very handy program when viewing documents / files to compare changes between the two files. It also makes carrying those changes over very simple, highlighting what is new and giving the option to carry those new changes over. Recommended to ease updating your changes.
+<p><b>IMPORTANT</b>: After updating your version of KingSize, be sure to go to General / Theme Settings and <b>RE-SAVE</b> the settings so any new changes can take place. This will not cause any loss of the old saved settings, rather just applying those which are new.</p>
+
+<h3>VERSION 1 - KINGSIZE</h3>
+
+<p>Version 1 was the original template released. A few minor bugs were reported and fixed for the release of version 2.</p>
+
+<h3>VERSION 2 - KINGSIZE</h3>
+
+<p>No major changes other than some backend adjustments, fixed a few reported bugs. Due to a faulty overwrite, we lost the change-log.</p>
+
+<h3>VERSION 3 - KINGSIZE</h3>
+
+<h4> Assorted Fixes &amp; Updates </h4>
+<ol>
+<li>Resolved the "Blog Paginate" issues.</li>
+<li>Fixed the "Color Style" options by editing "theme-options.php" lines #773 through to #784.</li>
+<li>Updated the "/gallery-widget/" with two new files, "attachment.php" and "loop-attachment.php" (image link resolved).</li>
+<li>Slider is disabled by default. Previously it was auto-enabled and caused a few confusions.</li>
+<li>Fixed the "Read More" issue when hovering, removed the extra padding on line #833 in "style.css".</li>
+<li>Updated the "Theme Options" to include the "Save Changes" with each section.</li>
+<li>Removed Timthumb from logo line #101 and centered the logo in "header.php"</li>
+<li>Removed the "Save Changes" from "Theme Options" located at the Top and Bottom of the page.</li>
+<li>Image Alignment Fix in "style.css" line #446 and line #473. Corrected the margin issues with images.</li>
+<li>Corrected the "template_blog.php" date to correct format of "Month, Day, Year" line #36.</li>
+<li>Corrected the "loop.php" date to correct format of "Month, Day, Year" line #33.</li>
+<li>Fixed the "template_blog.php" to show when "1 comment" has been made (error use to show 0 comments when there was 1).</li>
+<li>Fixed the "loop.php" to show when "1 comment" has been made (error use to show 0 comments when there was 1).</li>
+<li>Fixed the paging issue on Blog Template page when assigned to Home Page in "template_blog.php".</li>
+<li>Fixed the default page custom background grid option in theme-background.php.</li>
+</ol>
+
+<h4> New Features we've Included </h4>
+<ol>
+<li>New Theme Setting option for "Style / Colour Preferences" to edit the "Submenu" background and border colours.</li>
+<li>Updated "theme-options.php" to include a new "Save Changes" position. Now included in the header of each section.</li>
+<li>Updated the right click disabled feature.</li>
+<li>Added the Portfolio feature.</li>
+<li>Added lightbox (prettyphoto) on images Blog and post content.</li>
+<li>Added the theme option reset.</li>
+<li>Native WordPress gallery now uses the "lightbox" effect (prettyphoto).</li>
+<li>Featured Image when used on the blog now opens with the "lightbox" effect (prettyphoto).</li>
+<li>Video support is included in the new Portfolio post-types.</li>
+</ol>
+
+<h3>VERSION 3.0.1 - KINGSIZE</h3>
+<ol>
+	<li>Fixed background position issue on small screens: deleted lines 108-113 in style.css </li>
+</ol>	
+
+<h3>VERSION 3.1 - KINGSIZE</h3>
+
+	<p>We have made quite a fix changes in this release. Including an important one, updating the Timthumb script to the most current and stable version. Below here you will find a detailed list of all the changes we have introduced in this version.</p>
+	
+<ol>
+	<li>Timthumb was updated. The entire "timthumb.php" file should be replaced with the new one.</li>
+	<li><b>/lib/portfolios/portfolio-functions.php</b>
+	<br />- Line #78 to #79, removed the placement photo. No default photo will show in portfolios if no image is selected.</li>
+	<li><b>/template-portfolio.php</b>
+	<br />- Line #41 to #45, removed the extra "_" from the paging issue. A typo on our part in the previous version.
+	<br />- Showing the meta "Read more" text of portfolio lit page added line #115.
+	<br />- Added a new "fixed character" setting for Portfolio Excerpts to remove the issue with breaking columns. Found on line #118.
+	<br />- Added the option of for Custom Read More, disable of the button and ability to insert a custom link to read more buttons.</li>
+	<li><b>/single-portfolio.php</b>
+	<br />- Line #6, added new template body ID to be called to enable the ability for the 'lightbox' galleries to work.
+	<br />- Line #38 to #52, made the "Portfolio" image/video conditional by enabling/disabling in the Theme Settings.
+	<br />- Added the check for comment panel control from theme setting. Added #55 to #61 (new coding in the template).</li>
+	<li><b>/lib/theme-options.php</b>
+	<br />- Modified to include the new Portfolio conditional "Single Item Image".
+	<br />- Control of the Read more text of portfolio listing. Added #219 to #224.
+	<br />- Added in a new CSS Style Preferences where you can insert CSS to override the defaults in style.css.</li>
+	<li><b>/js/options.js</b>
+	<br />- Updated to include the new Theme Settings "Help" tooltips when mousing over the Help Icons inside Theme Settings.
+	<br />- Changed the jQuery from "$" to "jQuery" to provide better compatibilities with many of the conflicting plugins.</li>
+	<li><b>/css/stylesIE7.css</b>
+	<br />- IE FIX: commented out the first 2 lines for the IE navigation alignment issue.</li>
+	<li><b>/header.php</b>
+	<br />- IE FIX: Added new style in header.php #85 to #91.
+	<br />- Changed the jQuery from "$" to "jQuery" to provide better compatibilities with many of the conflicting plugins.
+	<br />- Line #71 has been updated to include a call to the Custom CSS, a new feature in General Theme Settings.</li>
+	<li><b>/functions.php</b>
+	<br />- Custom fields removal from the all post type. Added #379 to #385.</li>
+	<li><b>/lib/theme-page-custom-fields.php
+    <br />/lib/theme-post-custom-fields.php</b>
+	<br />- Applied the same styling to the Post and page custom write up options</li>
+	<li><b>/lib/portfolio/portfolio-media-php</b>
+	<br />- Added in new write panels options to correspond with new Portfolio settings.</li>
+	<li><b>/lib/portofolio_template_style_js.php</b>
+	<br />- Changed the jQuery from "$" to "jQuery" to provide better compatibilities with many of the conflicting plugins.</li>
+	<li><b>/lib/portfolio/portfolio-meta.php</b>
+	<br />- Added the new meta box for the portfolio page background meta options and read more and cutom link to read more.</li>
+	<li><b>/lib/portfolio/js/kingsize-portfolio-upload-button.js</b>
+	<br />- Attach the new action to open the background button gallery for including custom backgrounds to the portfolio item posts.</li>
+	<li><b>/lib/theme-background.php</b>
+	<br />- Added to override the pages default background.</li>
+	<li><b>/php/contact-send.php</b>
+	<br />- Fixed the email issue with the contact form. Now it is sending email using the native WordPress email function.
+	<br />- Applied new styling to the Contact Form so the success message is not overlapping the footer as it did in previous versions.</li>
+	<li><b>/footer.php</b>
+	<br />- Changed the jQuery from "$" to "jQuery" to provide better compatibilities with many of the conflicting plugins.</li>
+	<li><b>/style.css</b>
+	<br />- Applied some minor updates to the styling to compliment the Portfolio changes, Contact changes and a few other areas.</li>
+</ol>		
+
+<h3>VERSION 3.2 - KINGSIZE</h3>
+
+<ol>
+	<li><b>/php/contact-send.php</b>
+	<br />- Fixed the "sender" issue with the contact form. Now the email address will be displayed. A small bug fixed from v3.1.</li>
+</ol>		
+
+<h3>VERSION 3.3 - KINGSIZE</h3>
+
+<ol>
+	<li><b>Password Protection Fix</b>
+	<br />We have fixed the previous issues with the "Password Protected Pages" requiring text in the Content Editor, otherwise the input fields failed to display. Files include: colorbox.php, galleria.php, fancybox.php, page.php, prettyphoto.php and slideviewer.php.</li>
+	<li><b>/lib/theme-options.php</b>
+	<br />- Added 3 new options that controll the Dates of Single Posts, Blog Archives and Portfolio Items. The ability to "Enable / Disable" the Dates from being displayed.</li>
+	<li><b>/js/options.js</b>
+	<br />- Added new tooltips that correspond with the updates in "/lib/theme-options.php", giving descriptions to the new features we've included.</li>
+	<li><b>timthumb.php</b>
+	<br />- Updated timthumb.php with the most current and stable version available online.</li>
+	<li><b>style.css</b>
+	<br />- Added in new styling to compliment the new options for No Dates in Blog Posts and Portfolio items.</li>
+	<li><b>template_blog.php</b>
+	<br />- Added in a new conditional option that allows the user to select whether or not they want to display the dates with their blog entries via General / Theme Settings.
+	<br />- Added in the ability to disable the "Lightbox effects" when clicking the Featured Images. This is controllable via the write-panel in your posts when editing / creating them. Now you can set the lightbox effect to work or not work on individual posts.</li>
+	<li><b>/lib/theme-post-custom-fields.php</b>
+	<br />- Added new write-panel options for controlling the Lightbox effects on the Featured Images. Now you can disable / enable lightbox in individual posts as desired.</li>
+	<li><b>template-portfolio.php</b>
+	<br />- Added in the ability to disable lightbox on Images displayed inside your Portfolio Pages. Controllable via the write-panel when creating / editing your Portfolio Items.</li>
+	<li><b>/lib/portfolio/portfolio-functions.php</b>
+	<br />- Added in the ability to disable or enable lightbox on the images displayed in your Portfolio Items.</li>
+	<li><b>/lib/portfolio/portfolio-meta.php</b>
+	<br />- Added new write-panel options to control the ability to disable / enable the lightbox effect on the individual Portfolio Items.</li>
+	<li><b>/lib/portfolio/theme-posttypes.php</b>
+	<br />- Added the ability for buyers to include the "comments" inside the individual Portfolio Items.</li>
+	<li><b>functions.php</b>
+	<br />- Edited to include the new Notification Updater for any new Theme Update Releases in the near future.</li>
+	<li><b>/lib/theme-update-notification.php *NEW*</b>
+	<br />- Added to compliment the new Theme Update Notification we've added into this release of KingSize WordPress.</li>
+</ol>	
+
+</div>	
+
+</body>
+</html>
