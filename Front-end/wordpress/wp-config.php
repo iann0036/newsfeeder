@@ -16,16 +16,16 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'newsfeeder_nfwp');
+define('DB_NAME', 'nf');
 
 /** MySQL database username */
-define('DB_USER', 'newsfeeder');
+define('DB_USER', 'nf');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'Ewv3M5dMFHvEWSGT');
+define('DB_PASSWORD', '');
 
 /** MySQL hostname */
-define('DB_HOST', 'nbs.im');
+define('DB_HOST', '');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
